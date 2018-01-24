@@ -1,0 +1,20 @@
+<root>		
+	<node label="" item="New"  icon="embed:newSession.png" toolTip="Nuova sessione" />				
+	<node label="" item="Disconnetti" icon="embed:connect.png" toolTip="Disconnetti" />
+	<node label="" item="About" icon="embed:help.png" toolTip="Info" />								
+	<node label="" item="_"  icon="embed:blank.png" toolTip="" />				
+	<node label="" item="__"  icon="embed:blank.png" toolTip="" />				
+ 	
+	<node label="" item="___"  icon="embed:blank.png" toolTip="" />				
+	<node label="" item="____"  icon="embed:blank.png" toolTip="" />				
+	
+	<node label="" item="Minimize" icon="embed:minimize.png" toolTip="Minimizza" />
+	<node label="" item="Maximize" icon="embed:maximize.png" toolTip="Ingrandisci" />
+	<node label="" item="Close" icon="embed:close.png" toolTip="Chiudi" />
+<!-- 
+	<node label="Autostart" icon="" toolTip="Autostart">
+		<node label="Si" item="Si" icon="" toolTip="" />
+		<node label="No" item="No" icon="" toolTip="" />
+	</node>
+ -->
+ </root>	

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:BorderContainer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" 
+	     backgroundColor="0xbbbbbb" borderStyle="solid" borderColor="0x666666" contentBackgroundColor="0xffffff">
+			
+			<mx:Label id="prjTitle"  y="5" text="" width="250" x="5" fontWeight="bold" />
+			<mx:TextInput id="prjName" horizontalCenter="0"  y="40" text="" width="480" x="5" />
+			<mx:Button id="prjOkAS400" click="prjLoadSave(event)" left="5" y="70"  label="AS400"/>
+			<mx:Button id="prjOkLocal" click="prjLoadSave(event)" left="85" y="70"  label="Local"/>
+			<mx:Button id="prjNok" click="prjHide(event)" right="5" y="70" label="Annulla" />
+	
+	
+	
+	<fx:Script>
+		<![CDATA[
+			import it.prodigyt.components.gui.as3.PYAlert;
+			import it.prodigyt.engine.managers.ControlSessionManager;
+			import it.prodigyt.engine.managers.events.SessionEvent;
+			import it.prodigyt.engine.projectSheet.DefaultsManager;
+			import it.prodigyt.engine.projectSheet.ManagerEvent;
+			import it.prodigyt.panelcomposer.RagnoManager;
+	
+	
+			private var _projectLocation:String;
+			private var _ctrlSession:ControlSessionManager
+			private var _isSaveAs:Boolean = true
+			private var _localConfig:*;
+			 
+			public function prjNameCont_keyDownHandler(event:KeyboardEvent):void
+			{
+				 
+//				switch (event.keyCode)
+//				{
+//					case Keyboard.ENTER:
+//						// Simulate click on OK button
+//						prjOk.dispatchEvent(new MouseEvent(MouseEvent.CLICK));
+//						break;
+//				}
+			}
+			
+			
+			protected function prjLoadSave(e:MouseEvent):void
+			{
+				stage.removeEventListener(KeyboardEvent.KEY_DOWN, prjNameCont_keyDownHandler);
+				stage.nativeWindow.visible = false;
+				if (prjName.text=="") prjName.text = DefaultsManager.getInstance().completePath
+				var projectName = prjName.text
+				
+				// si assume che il Defaults manager sia stato già avviato dal client
+				
+				switch (prjTitle.text)
+				{
+					case "Load Project":
+					{
+						if (e.target.id == "prjOkLocal")
+						{
+							var fr:File =  File.applicationDirectory
+						    fr.addEventListener(Event.SELECT, onPrjSelected);
+							fr.resolvePath("/data/")
+						    var imgTypeFilter:FileFilter = new FileFilter("Project Files","*.xml");
+						    fr.browse([imgTypeFilter]);
+
+							break;
+						}
+						else if (e.target.id == "prjOkAS400")
+						{
+							if (projectName.indexOf(".") >-1 ) projectName = projectName.split(".")[0]
+							dispatchEvent( new Event("loadFromServer") )
+							break;
+						}
+					}
+					case "Salva project con nome":
+					{
+						
+							addListeners() 
+						
+							if (e.target.id == "prjOkLocal")
+							{
+								//if (projectName.indexOf(".") ==-1 ) projectName = projectName + ".xml"
+								DefaultsManager.getInstance().setProjectLocation("local")
+								DefaultsManager.getInstance().saveAs(projectName);
+							}
+							else if (e.target.id == "prjOkAS400")
+							{
+								newSaveAs();
+								
+								function newSaveAs():void
+								{
+									if (ctrlSession==null)
+										initControlSession(newSaveAs)
+									else
+									{
+										DefaultsManager.getInstance().setProjectLocation("server", ctrlSession )
+										DefaultsManager.getInstance().saveAs(projectName);
+									}
+								}
+							}
+							
+
+						break;
+					}
+				}
+			}
+			
+			
+			
+			protected function saved(event:ManagerEvent):void
+			{
+				prjName.text = DefaultsManager.getInstance().completePath
+				removeListeners()
+				if (event.data == "saveLocal")
+				{
+					projectLocation = "local";
+					dispatchEvent( new Event("savedOnLocal") )
+				}
+				if (event.data == "saveAS400")
+				{
+					projectLocation = "server";
+					saved();
+					
+					function saved():void
+					{
+						if (ctrlSession!=null)
+							destroyControlSession(saved);
+						else
+							dispatchEvent( new Event("savedOnAS400") )
+					}
+					
+				}
+			}
+			
+			protected function saveError(event:ManagerEvent):void
+			{
+				removeListeners()
+				dispatchEvent( new Event("saveError") )
+			}
+			
+			protected function prjHide(e:MouseEvent):void
+			{
+				stage.nativeWindow.visible = false
+			}
+
+			protected function removeListeners():void
+			{
+				DefaultsManager.getInstance().removeEventListener( ManagerEvent.MANAGER_SAVED, saved) 
+				DefaultsManager.getInstance().removeEventListener( ManagerEvent.MANAGER_SAVE_ERROR, saveError) 
+			}
+			
+			protected function addListeners():void
+			{
+				DefaultsManager.getInstance().addEventListener( ManagerEvent.MANAGER_SAVED, saved) 
+				DefaultsManager.getInstance().addEventListener( ManagerEvent.MANAGER_SAVE_ERROR, saveError) 
+			}
+			
+			
+			public function saveProject():void
+			{
+				prjName.text = DefaultsManager.getInstance().completePath
+				var projectName:String = prjName.text
+				addListeners()
+				if (projectLocation=="server")
+				{
+					newSave();
+					
+					function newSave():void
+					{
+						if (ctrlSession==null)
+							initControlSession(newSave)
+						else
+						{
+							DefaultsManager.getInstance().setProjectLocation(projectLocation, ctrlSession )
+							DefaultsManager.getInstance().save(projectName);
+						}
+						
+					}
+					
+				}
+				else if (projectLocation=="local")
+				{
+					DefaultsManager.getInstance().setProjectLocation(projectLocation, ctrlSession )
+					DefaultsManager.getInstance().save(projectName);
+				}
+				
+			}
+			
+			public function setPath():void
+			{
+				prjName.text = DefaultsManager.getInstance().completePath
+			}
+			
+			
+			
+			
+			public function get ctrlSession():ControlSessionManager
+			{
+				return _ctrlSession;
+			}
+
+			public function set ctrlSession(value:ControlSessionManager):void
+			{
+				_ctrlSession = value;
+			}
+			
+			
+			
+			
+			
+			
+			/**
+			 * 
+			 * 
+			 * 
+			 */
+			private function onPrjSelected(event:Event):void
+			{
+				var fr:File = event.target   as File
+				fr.removeEventListener(Event.SELECT, onPrjSelected);
+				var projectName:String = fr.nativePath;
+				if (projectName.indexOf(".") ==-1 ) projectName = projectName + ".xml"
+				prjName.text = projectName
+				dispatchEvent( new Event("loadFromLocal") )			
+			}
+
+			public function get isSaveAs():Boolean
+			{
+				return _isSaveAs;
+			}
+
+			public function set isSaveAs(value:Boolean):void
+			{
+				_isSaveAs = value;
+				
+				prjName.enabled = _isSaveAs
+				
+			}
+
+			public function get projectLocation():String
+			{
+				return _projectLocation;
+			}
+
+			public function set projectLocation(value:String):void
+			{
+				_projectLocation = value;
+			}
+			
+			 
+			private function destroyControlSession(callback:Function):void
+			{
+				ctrlSession.removeEventListener("Connected", ctrlSessionConnResult)
+				ctrlSession.removeEventListener("ConnectionError", ctrlSessionConnResult)
+				ctrlSession.removeEventListener(SessionEvent.LOGIN_RESPONSE, ctrlSessionReady)
+				ctrlSession.removeEventListener(SessionEvent.AUTH_RESPONSE, ctrlSessionReady)
+				ctrlSession.removeEventListener(SessionEvent.SYSTEM_READY, ctrlSessionReady)
+				ctrlSession.removeEventListener(SessionEvent.MESSAGE, getMessagesFromSession);
+				// connetti al sistema
+				ctrlSession.logout();
+				ctrlSession.destroy()
+				ctrlSession = null
+				callback();
+			}
+			
+			private var callbackCtrlSession:Function
+				
+			private function initControlSession(callBack:Function):void
+			{
+				callbackCtrlSession = callBack;
+				ctrlSession = new ControlSessionManager()
+				ctrlSession.addEventListener("Connected", ctrlSessionConnResult)
+				ctrlSession.addEventListener("ConnectionError", ctrlSessionConnResult)
+				ctrlSession.addEventListener(SessionEvent.LOGIN_RESPONSE, ctrlSessionReady)
+				ctrlSession.addEventListener(SessionEvent.AUTH_RESPONSE, ctrlSessionReady)
+				ctrlSession.addEventListener(SessionEvent.SYSTEM_READY, ctrlSessionReady)
+				ctrlSession.addEventListener(SessionEvent.MESSAGE, getMessagesFromSession);
+				// connetti al sistema
+				ctrlSession.connect(XML(_localConfig));
+			}
+			
+			/// sessione di controllo
+			protected function ctrlSessionConnResult(e:Event):void
+			{
+	
+				if (e.type=="ConnectErrord") 
+				{
+					//ledConnection.source = ledrn
+					//esito.text = "errore connessione"
+					
+					return
+				}
+				
+				ctrlSession.sendLogin(_localConfig.@uid.toString(), _localConfig.@pw.toString())
+				
+			}
+			
+			protected function ctrlSessionReady(e:SessionEvent):void
+			{
+				
+				if (e.type==SessionEvent.SYSTEM_READY) 
+				{
+					
+				}
+				
+				// risposta positiva al login (la risposta negativa è gestita altrove...) 
+				if (e.type == SessionEvent.LOGIN_RESPONSE) 
+				{
+					var os:String = Capabilities.os
+					os.replace(" ","")
+					os = os.substr(0,10)
+					var dn:String = _localConfig.@deviceName.toString();
+					ctrlSession.sendAuth("*COMPOSER","*SUBSESS", os, dn);
+				}
+				// risposta positiva all'autorizzazione (la risposta negativa è gestita altrove...) 
+				if (e.type == SessionEvent.AUTH_RESPONSE) 
+				{
+					callbackCtrlSession();
+					callbackCtrlSession=null
+				}
+			}
+			/**
+			 * 
+			 * 
+			 * 
+			 */
+			protected function getMessagesFromSession(e:SessionEvent):void
+			{
+				
+			}
+			public function get localConfig():*
+			{
+				return _localConfig;
+			}
+
+			public function set localConfig(value:*):void
+			{
+				_localConfig = value;
+			}
+	
+			
+		]]> 	</fx:Script>
+	
+	
+</s:BorderContainer>

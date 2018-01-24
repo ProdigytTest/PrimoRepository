@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init()"
+			 horizontalScrollPolicy="off" verticalScrollPolicy="off">
+
+<mx:Script><![CDATA[
+	private var calcHeight:Number = 10;
+	[Embed(source="img/baseCalendar.png")] private var bm:Class;
+	private var bmp:Bitmap = new bm ();
+	
+	private var mesi:Array = [
+							  "GENNAIO",
+							  "FEBBRAIO",
+							  "MARZO",
+							  "APRILE",
+							  "MAGGIO",
+							  "GIUGNO",
+							  "LUGLIO",
+							  "AGOSTO",
+							  "SETTEMBRE",
+							  "OTTOBRE",
+							  "NOVEMBRE",
+							  "DICEMBRE"
+                              ]
+	protected function init()
+	{
+		foto.source = bmp
+		var day = new Date().getDate()
+		var month = mesi[new Date().month]
+		mese.text = month
+		giorno.text	 = String(day)
+		
+	}
+	
+
+	public function compute()
+	{
+		var scale = this.width / bmp.width
+		this.height = bmp.height * scale
+		foto.scaleX = scale
+		foto.scaleY = scale
+	}
+	 
+]]></mx:Script>	
+
+	<mx:Image 	id="foto" />
+	<mx:Text 	id="mese" color="0xffffff" y="2"  
+				fontFamily="Base" fontSize="12" fontWeight="bold" fontAntiAliasType="advanced"
+			 	textAlign="center"  scaleX=".8" scaleY=".7"
+			 	/>
+	<mx:Text 	id="giorno" color="0x000000" y="14"  
+				fontFamily="Base" fontSize="20" fontWeight="bold" fontAntiAliasType="advanced"
+			 	textAlign="center" width="{this.width}" scaleY="1.5" 
+			 	/>
+</mx:Canvas>

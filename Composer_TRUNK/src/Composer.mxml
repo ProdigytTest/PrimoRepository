@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					   xmlns:s="library://ns.adobe.com/flex/spark" 
+					   xmlns:mx="library://ns.adobe.com/flex/mx" 
+					   xmlns:viewsObsolete="it.prodigyt.coreObsolete.viewsObsolete.*"
+					   applicationComplete="applicationCompleteHandler(event)"
+					   width="816" height="676" visible="false"
+					   doubleClickEnabled="true"  backgroundColor="0x222222"
+					   showStatusBar="false" backgroundAlpha="0"  contentBackgroundAlpha="0"  >
+	<fx:Script>
+		<![CDATA[
+
+			import mx.events.FlexEvent;
+			
+			import comp.PCWindowAS;
+			
+			import it.prodigyt.utils.PyDirectoryManager;
+			import it.prodigyt.utils.log.LogUtil;
+			
+			private var pcWindow:PCWindowAS
+			
+			private var composer:PanelComposer
+
+			private var clientPc:ClientPc;
+			/**
+			 * Begin class handlers
+			 */
+			
+			protected function applicationCompleteHandler(event:FlexEvent):void
+			{
+				addEventListener(Event.ACTIVATE, activated)
+				var optns:NativeWindowInitOptions = new NativeWindowInitOptions()
+				optns.type = NativeWindowType.NORMAL
+				pcWindow = new PCWindowAS(optns)
+				pcWindow.width = 816;
+				pcWindow.height = 676;
+				pcWindow.visible = false
+				//pcWindow.title = title;		
+				pcWindow.addEventListener(Event.CLOSING, closingWindow )
+				pcWindow.addEventListener(Event.RESIZE, resizeWindow);
+				composer = new PanelComposer()
+					
+				clientPc = new ClientPc(ClientPc.COMPOSER, composer);
+					
+				pcWindow.addContent(clientPc);
+				//pcWindow.activate()
+
+			}
+			
+			protected function resizeWindow(event:NativeWindowBoundsEvent):void
+			{
+				
+
+				
+			}
+			
+			private function activated(e:Event):void
+			{
+				for each ( var nw:NativeWindow in NativeApplication.nativeApplication.openedWindows)
+				{
+					if (nw != pcWindow)
+						nw.orderToFront()
+				}
+			}		
+					
+			private function closingWindow(e:Event):void
+			{
+				if (!composer.canClose() || !clientPc.closeWin())
+				{
+					e.preventDefault()
+					e.stopImmediatePropagation()
+					return;
+				}
+				
+				if (LogUtil.output.indexOf("log") >-1)
+				{
+					var path:String = "log";
+					var name:String = "errorLog.txt";
+					PyDirectoryManager.flushString(path,name , LogUtil.getLogMemory() );
+				}
+				
+				// MAD 2017-01-24: Basterebbe chiamare clientPc.closeWin();
+				// La closeWin esegue entrambi saveBackup e l'exit.
+				// Ma manteniamo la duplicazione per evitare potenziali danni collaterali che ci sfugano adesso
+				composer.saveBackup("POST");
+				
+				NativeApplication.nativeApplication.exit()
+					
+					
+//				e.preventDefault()	
+//				var pcWindow:PCWindowNew = e.target as PCWindowNew
+//				var name:String = pcWindow.title		
+//				var winMenu:NativeMenuItem = winDependentMenus[name] 
+//				
+//				if (winMenu) winMenu.dispatchEvent( new Event(Event.SELECT) )  // eseguo funzioni di uncheck globali (vedi onWindowCommand)
+			}
+			
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	
+</s:WindowedApplication>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+	
+	<!-- Sezione dedicata ai default di progetto -->
+	<projectSection>
+		
+
+	<skinProperties>
+
+		<styles>
+			
+			<!-- nota: alcuni defaults sono a discrezione utente, altri sono obbligatori come inizializzazione componente
+				es. text vuoto, enabled false per input, background alpha per sfondi etc.... VERIFICARE!!!!!!!!! -->
+				 
+		<global>
+			<default
+				backgroundColor="0x000000"
+				backgroundAlpha="0"
+				backgroundImage=""
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="18"
+				fontWeight="normal"
+				borderColor="0"
+				borderStyle="none"
+				borderSize="0"
+				borderRadius="0"
+				shadow="false"
+				state=""
+				visible="true"/>
+				
+			<LogoOmbreggiato
+				bevel="bevel"
+			/>	
+			<!--  NEW v1.4: colore del control button della finestra desktop -->
+			<WindowControlButton 
+				backgroundColor="0x226aaf"
+				backgroundAlpha="1"
+				borderRadius="0"
+				width="35"
+				height="35"
+			/>	
+			<!--  NEW v1.4: immagine del control button della finestra desktop -->
+			<WindowControlButtonImage 
+				backgroundImage="assets/infomath/glt.png"
+				x="0"
+				y="0"
+				width="62"
+				height="62"
+				scaleX="0.5"
+				scaleY="0.5"
+			/>
+			<!--  NEW v1.4: colore dei bordi della finestra desktop -->
+			<WindowBorders 
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+				borderRadius="0"
+				shadow="true"
+				shadowColor="0x333333"
+			/>	
+			
+			<logo
+				backgroundImage="assets/logo.png"
+			/>
+			
+			<PYLabell
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="18"
+				fontWeight="bold"
+				rotation="-90"	
+				align="center"
+			/>
+			
+			<PYLabelSpalsh
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="18"
+				fontWeight="bold"	
+			/>
+			
+			<PYLabelBig 
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="38"
+				fontWeight="bold"
+				rotation="-90"
+				text="Prodigyt Client"
+			/>
+			
+			<PYLabelBigSpalsh
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="38"
+				fontWeight="bold"
+			/>
+			
+			<PYLabelBig2
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="38"
+				fontWeight="bold"
+				rotation="-90"
+				text="Prodigyt"	
+			/>
+			
+			<Button
+				backgroundColor="0xe32219"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				align="center"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0xa40101"
+				toColorAlpha="1"
+				toColorRatio="128"
+			/>
+			
+			<ButtonLogIn
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="center"
+
+			/>
+			
+			<LineaDiSeparazioneLogIn
+				backgroundColor="0xffffff"
+				backgroundAlpha="0"
+				borderColor="0x960302"
+				borderStyle="solid"
+				borderSize="1"
+				borderSides="left"
+				borderAlpha=".2"
+			/>
+			
+			<PYButton
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="13"
+			/>
+			
+			<PYButtonError
+				backgroundAlpha="0"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+			<PYButtonLogin
+				backgroundAlpha="0"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+			<PYFiledIOValue
+				backgroundColor="0xffffff"
+				backgroundAlpha="0"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				align="right"
+			/>
+			<PYFiledIOAtrribute
+				backgroundColor="0xeeeeee"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<PYFiledIOAtrributeRequired
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<PYButtonOver
+				backgroundColor="0xe8e7e7"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+			/>
+			
+			<PYButtonSelected
+				backgroundColor="0xe32219"
+				backgroundAlpha="1"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+			/>
+			
+			<ContainerSx
+				backgroundColor="0xe32219"
+				backgroundAlpha=".8"
+				borderColor="0xffffff"
+				borderStyle="none"
+				borderSize="1"
+				borderRadius="30"
+				bevel="bevel"
+				shadow="true"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x930101"
+				toColorAlpha="1"
+				toColorRatio="255"				
+				
+				
+			/>
+			
+			<ContainerInterno
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderRadius="30"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<ContainerInternoDx
+				borderColor="0xdddddd"
+				borderStyle="solid"
+				borderSides="left"
+				borderSize="1"
+			/>
+			
+			<Box
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0xff0404"
+				foregroundAlpha="1"
+				spacing="1"
+			
+			/>
+			
+			<BoxDx
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				spacing="1"
+
+			/>
+			<PYConnection
+				backgroundColor="0xffffff"
+				backgroundAlpha="0"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="15"
+				fontWeight="bold"
+			/>
+			
+			<BoxAlert
+				backgroundColor="0xe32219"
+				backgroundAlpha=".8"
+				borderColor="0xffffff"
+				borderStyle="none"
+				borderSize="1"
+				borderRadius="30"
+				bevel="bevel"
+				shadow="true"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x930101"
+				toColorAlpha="1"
+				toColorRatio="255"				
+			/>
+			
+			<ButtonAlert
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="center"
+			/>
+			
+			<controlPanelStyle
+				backgroundColor="0xe32219"
+				backgroundAlpha="1"
+				borderSize="1"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x930101"
+				toColorAlpha="1"
+				toColorRatio="128"			
+			/>
+			
+			<constantControlPanel
+				fontFamily="Arial"
+				fontSize="12"
+				fontWeight="bold"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				align="left"
+				marginRight="20"
+			/>
+			
+			<fieldIOControlPanel
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="14"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="left"
+			/>
+			
+			<ContainerSx_v2
+				autosize="false"
+				 width="800"
+				  height="457"
+				   borderColor="0x000000"
+				    backgroundImage="assets/elelco/sfondo_elelco.png"
+				    	 borderStyle="solid"	
+
+			/>
+			
+			
+			
+			<ContainerInterno_v2
+				
+				backgroundColor="0x204259" 
+				backgroundAlpha="1"
+				shadow="true"
+				shadowColor="0x90b2c4"
+			/>
+			
+			<FiledIO_v2
+				backgroundColor="0xeeeeee"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<ButtonLogIn_v2
+				includeInLayout="false"
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="center"
+			/>
+			
+			<WhiteButton_v2
+				backgroundAlpha="0"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+				
+				
+			<PYButtonError_v2
+				backgroundAlpha="0"
+				foregroundColor="0xbb0000"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+				
+			<Plus_v2 
+				backgroundImage="assets/elelco/elelco_plus.png"	
+				autosize="false"	
+			/>
+			
+			
+			<!-- Stili projectBox -->
+			
+			
+			<ProjectBoxattrStyle 
+				backgroundColor="0x999999"
+				backgroundAlpha="1"	
+				foregroundColor="0x333333"
+				paddingTop="5"
+				paddingBottom="5"
+				paddingLeft="5"
+				paddingRight="5"
+				borderStyle="solid"
+				borderRadius="10"
+				shadow="true"
+				shadowColor="0x666666"
+				borderSize="1"
+				borderColor="0x666666"
+			/>
+			
+			<attrLabelStyle 
+				backgroundColor="0xcccccc"	
+				foregroundColor="0x000000"
+			/>
+			
+			<attrInputTextStyle 
+				backgroundColor="0xffffff"	
+				backgroundAlpha="1"
+				foregroundColor="0x333333"
+				marginTop="5"
+				marginBottom="5"
+				marginLeft="5"
+				marginRight="5"
+				borderStyle="solid"
+				borderSize="1"
+				borderColor="0x666666"
+			/>
+			
+			<ProjectBoxItemStyle 
+				backgroundColor="0xcccccc"	
+				backgroundAlpha="1"
+				foregroundColor="0x333333"
+				marginTop="5"
+				marginBottom="5"
+				marginLeft="5"
+				marginRight="5"
+				borderStyle="solid"
+				borderSize="1"
+				borderRadius="10"
+				shadow="true"
+				shadowColor="0x666666"	
+				borderColor="0x666666"
+			/>
+			
+			<ProjectBoxOverStyle 
+				backgroundColor="0x666666"	
+				foregroundColor="0xffffff"
+			/>
+			
+			<ProjectBoxSelectedStyle 
+				backgroundColor="0x999999"	
+				foregroundColor="0xffffff"	
+			/>
+			
+			<ProjectBoxPopStyle 
+				spacing="10"
+			/>
+			
+			
+			<!--  NEW v1.4: sezione dedicata al menu di sistema della window desktop -->
+			
+			 	<flowItem 	
+			 				borderRadius="10"
+			 				foregroundColor="0xffffff" 
+						 	foregroundAlpha="1" 
+						 	backgroundColor="0x999999" 
+						 	backgroundAlpha="0" 
+						 	fontWeight="normal" 
+						 	fontSize="14" 
+						 	borderStyle="solid"    
+						 	gradientType="none" 
+						 	toColor="0x222222" 
+						 	gradientAngle="90" 
+						 	borderColor="0x666666" 
+						 	borderSize="0" 
+						 	borderAlpha="0" 
+						 	borderSides="none" 
+						 	fontFamily="Arial"
+						 	autoSize="false"
+						 	marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5"
+							calcSize="false"
+							iconScale=".6"
+							iconAlign="W"
+							iconGap="0"
+							iconColor="0xffffff"
+							width="20" />
+               
+               	<flowOver 
+               				borderRadius="10"
+			               	foregroundColor="0xffff66" 
+			               	foregroundAlpha="1" 
+			               	backgroundAlpha="0" 
+			               	borderAlpha="0" 
+			               	borderSides="none" 
+			               	borderStyle="solid" 
+			               	fontFamily="Arial"
+			               	iconColor="0xffff66" />
+               
+               	<flowTitle 
+               				borderRadius="10"
+			               	foregroundColor="0xbbbbbb" 
+			               	foregroundAlpha="1" 
+			               	backgroundColor="0x333333" 
+			               	backgroundAlpha="0" 
+			               	fontWeight="normal" 
+			               	fontSize="14" 
+			               	borderAlpha="0" 
+			               	borderSides="none" 
+			               	borderStyle="solid" 
+			               	fontFamily="Arial"
+			               	autoSize="true"
+			               	marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5" />
+               
+               	<flowSelected 
+               				borderRadius="10"
+			               	foregroundColor="0xffffff" 
+			               	foregroundAlpha="1" 
+			               	backgroundColor="0xF33329" 
+			               	backgroundAlpha="0"
+			               	fontWeight="normal" 
+			               	fontSize="14" 
+			               	borderAlpha="0" 
+			               	borderSides="none" 
+			               	borderStyle="solid" 
+			               	fontFamily="Arial"
+			               	autoSize="true"
+			               	marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5" 
+			               	iconColor="0xffffff" />
+				
+				<flowSubMenu 
+							borderRadius="10"
+							backgroundAlpha="0" 
+							backgroundColor="0x333333" 
+							borderAlpha="0" 
+							borderSides="none" 
+							borderStyle="solid" 
+							foregroundAlpha="1" 
+							foregroundColor="0xffffff" 
+							fontFamily="Arial" 
+							fontSize="14" 
+							fontWeight="normal"
+							autoSize="true"
+							marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5"/>  
+							
+				<touch
+					backgroundImage="assets/touch400.png"
+			/>
+			</global>
+			 
+			 <!--  NEW v1.4: sezione dedicata al menu di sistema della window desktop -->
+			
+			 <FlowContainer>
+               
+               <default layout="vertical" 
+               			labelLength="30" 
+               			fontFamily="Arial" 
+               			monoSpaced="true" 
+               			fontSize="16" 
+               			textColor="0x333333" 
+               			highColor="0xffffff" 
+               			lineColor="0x333333" 
+               			popAreaStyle="flow" 
+               			popAreaItemStyle="flowItem" 
+               			popAreaOverStyle="flowOver" 
+               			popAreaSelectedStyle="flowSelected" 
+               			hGap="8" 
+               			flowCenter="flow_on_item" 
+               			keyboardEnabled="true" 
+               			popAreaSubMenuStyle="flowSubMenu" 
+               			popAreaTitleStyle="flowTitle" 
+               			allowMove="false" 
+               			includeArea="false"  
+               			search="false" />
+               
+            </FlowContainer>
+            
+             <FlowContainerItem>
+               
+               <default borderRadius="20" />
+               
+               <flow 
+                autoSize="true"
+                borderRadius="10"
+               	layout="horizontal" 
+               	backgroundColor="0x226aaf"
+				backgroundAlpha="1"
+				borderColor="0x000000"
+				borderStyle="none"
+				borderSize="1"
+				bevel="none"
+				shadow="false"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x226aaf"
+				toColorAlpha="1"
+				toColorRatio="255"
+				itemOverBackAlpha="0"
+				itemSelectedBackAlpha="0"
+				paddingTop="8"
+				paddingRight="15"
+				paddingBottom="9"
+				paddingLeft="5"
+				spacing="5"
+               />
+            </FlowContainerItem>
+            <!--  NEW v1.4: fine della sezione dedicata al menu di sistema della window desktop -->
+			
+		   <PYContainer>
+           		<default/>
+           		<splash percentHeight="100" percentWidth="100" />
+          </PYContainer>
+          	  
+          <PYComponent>
+             	<default/>
+          </PYComponent>
+          	   
+          <FieldO>
+              	<default/>
+          </FieldO>
+          	   
+          <FieldIO>
+              	<default/>
+          </FieldIO>
+          	    
+          <PYLabel>
+              	<default/>
+          </PYLabel>
+
+		</styles>
+
+
+	<pfkeys>
+	 	<navigation>
+		</navigation>
+	 </pfkeys>
+		
+	</skinProperties>
+	
+	</projectSection>
+	
+
+	<desktopsSection> 
+	 
+		
+	
+	</desktopsSection>
+	
+
+	<fontsSection>
+		<fontsToLoad>
+			<font name="Arial" />
+		</fontsToLoad>
+	</fontsSection>
+	
+</root>

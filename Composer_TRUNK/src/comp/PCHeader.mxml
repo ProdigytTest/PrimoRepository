@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mx:Canvas 	xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="creationCompleteHandler(event)" 
+			backgroundColor="{PCDefaultColors.WINDOWHEADER}" 
+			filters="{[new BevelFilter(3, 45, 0xaaaaaa, 1, 0x333333, 1, 4, 4), new DropShadowFilter(7,45,0,1,10,10,1,5)]}">
+
+	<mx:Script>
+		<![CDATA[
+			import com.greensock.TweenLite;
+			import com.greensock.easing.Expo;
+			
+			import comp.PCDefaultColors;
+			import comp.ScrollerManager;
+			
+			import mx.events.FlexEvent;
+			
+			public var altezzaHeader:Number = 30
+			private var scalable:Boolean = true
+			private var scrollArea:Canvas
+				
+			protected function creationCompleteHandler(event:FlexEvent):void
+			{
+			}
+			
+		]]>
+	</mx:Script>
+	
+			
+</mx:Canvas>	

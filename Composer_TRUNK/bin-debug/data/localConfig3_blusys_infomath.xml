@@ -1,0 +1,8 @@
+<localConfig>
+    <splashStyle name='data/TabletStyle.xml' />
+    <config autoStart='false' log='true' notepadDirectory='C:\Program Files (x86)\Notepad++\Notepad++.exe' verbose="true"/>
+    <connections>
+		 <connection source="DSPF" name="blusys" type="socket" address="93.62.162.144" port="51111" uid="urania_rb" cmd="" isDefault="false" projectLocation="server" projectFile="wse400/prj_table1" menu="" developer="true" deviceName="alex"/>
+        <connection source="DSPF" name="INFOMATH TABLET" type="socket" address="212.45.134.30" port="10004" uid="touch400" cmd="" isDefault="false" projectLocation="server" projectFile="touch400/prj_table1" menu="" developer="true" deviceName="Ruggbo"/>
+     </connections>
+</localConfig>

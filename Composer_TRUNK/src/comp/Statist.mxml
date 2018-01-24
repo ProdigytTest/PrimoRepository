@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" backgroundAlpha=".8" >
+		
+	
+	 <mx:Script>
+	    	<![CDATA[
+	    		import mx.core.UIComponent;
+	    		import mx.messaging.channels.StreamingAMFChannel;
+	    		import mx.formatters.DateBase;
+	    		import mx.controls.Label;
+	
+	private var blockT:Timer
+	private var blockX = 0
+	private var pblockX = 0
+	private var _blocked:Boolean = false;
+	
+	private var dati:Array = [];
+	
+	[Bindable]
+	public var color = 0xffffff
+	
+	public const UI_COLOR = 0XFF00FF;
+	public const BUILD_COLOR = 0X00aaff;
+	public const SEND_COLOR = 0XFF0000;
+	public const RECEIVE_COLOR = 0xcccc00;
+	
+	private var elapsed 
+	private var startTime: Date 
+	
+	
+	private var sendTime:Date 
+	private var sendXML:String	
+	private var recvTime:Date
+	private var totalTime:int = 0
+	private var timeDiff:int
+	
+	public function  registerTimeDiff(diff:int):void 
+	{	
+		timeDiff = diff
+	}
+	
+	public function  registerSend(d:Date, sendData:String):void 
+	{	
+		sendTime = d
+		sendXML = sendData
+	}
+	
+	public function  registerReceive(d:Date, type:String, name:String, tr:String, ts:String, qty:int, xml:XML	):void 
+	{	
+		recvTime = d
+		var trTime = convertAsMs(tr)
+		var tsTime = convertAsMs(ts)
+		if (trTime == 0 )
+		{
+			trTime = convertMs(sendTime) - timeDiff
+			type = "JOB START+"+type
+		}
+		// send time
+		dati.push( {cSend:convertMs(sendTime) , 
+					cRecv:convertMs(recvTime) , 
+					sSend:( tsTime+ timeDiff) ,
+					sRecv:( trTime+ timeDiff) ,
+					name:name,
+					type:type,
+					qty:sendXML.length,
+					xml:xml,
+					phase:"send" } )
+					
+
+		
+		
+		// AS400 time
+		dati.push( {cSend:convertMs(sendTime) , 
+					cRecv:convertMs(recvTime), 
+					sSend:( tsTime+ timeDiff) ,
+					sRecv:( trTime+ timeDiff) ,
+					name:name,
+					type:type,
+					qty:qty,
+					xml:xml,
+					phase:"compute" } )			
+		
+		
+		
+		
+		// receive time
+		dati.push( {cSend:convertMs(sendTime) , 
+					cRecv:convertMs(recvTime) , 
+					sSend:( tsTime+ timeDiff) ,
+					sRecv:( trTime+ timeDiff) ,
+					name:name,
+					type:type,
+					qty:qty,
+					xml:xml,
+					phase:"receive" } )			
+		
+		
+		totalTime += ( convertMs(recvTime) - convertMs(sendTime) )
+		
+		sendTime = recvTime
+	}
+	
+	public function  registerUIBuild(d:Date, type:String, name:String, qty:String	):void 
+	{	
+		
+		// receive time
+		dati.push( {cSend:convertMs(sendTime) , 
+					cRecv:convertMs(d) , 
+					name:name,
+					type:type,
+					qty:qty,
+					phase:"ui" } )			
+		
+		totalTime += ( convertMs(recvTime) - convertMs(sendTime) )
+		
+		// receive time
+		dati.push( {cRecv:totalTime ,
+
+					phase:"total" } )			
+		
+	}
+	
+	private function generateStat():void
+	{
+		testi.removeAllChildren()
+		testi.graphics.clear()
+		for (var i=0;i<dati.length;i++)
+		{
+			if (dati[i].phase=="send") 
+			{
+				this.addLabel(i, dati[i].type+" "+dati[i].name + " send:"+ String(dati[i].qty) +"   " , (dati[i].sRecv - dati[i].cSend ) /1000, 0xff6600)
+			}
+			else if (dati[i].phase=="compute")
+			{
+				this.addLabel(i,dati[i].type+" "+dati[i].name + " compute:" , (dati[i].sSend-dati[i].sRecv) /1000, 0xff00ff)
+			}
+			else if (dati[i].phase=="receive")
+			{
+				var bits = dati[i].qty * 8
+				var secs = (dati[i].cRecv - dati[i].sSend) /1000 
+				var kb =int(  ( bits / secs ) / 1024  )
+				this.addLabel(i,dati[i].type+" "+dati[i].name + " receive:"+ String(dati[i].qty) +"   Kbps:" +kb+ "   "   , (dati[i].cRecv - dati[i].sSend) /1000, 0xff0000)		
+			}
+			else if (dati[i].phase=="ui")
+			{
+				this.addLabel(i,dati[i].type+" "+dati[i].name + " "+ dati[i].qty +" ", (dati[i].cRecv-dati[i].cSend) /1000, 0xdddd00)
+			}
+			else if (dati[i].phase=="total")
+			{
+				this.addLabel(i, "Total time: ", totalTime /1000, 0x00ff00)
+			}
+		}
+	}
+	
+	private function addLabel(i:int, testo:String, value:Number, color:Number):void
+	{
+		var l:Label = new Label()
+		l.name = "L"+i
+		l.setStyle("color", color)
+		l.text = testo+ String(value)
+		testi.addChild(l)
+		l.validateNow()
+		testi.validateNow()
+		grafico(l, color,  value )
+		l.addEventListener(MouseEvent.CLICK, vediXml)
+		l.mouseChildren = false
+		l.buttonMode = true
+	}
+	
+	public function clear():void
+	{
+		totalTime = 0
+		maxopen=0
+		dati = []
+	}
+	
+	private function lastInp():void
+	{
+		visXml.text = sendXML	
+		visXml.visible = true
+	}
+	
+	private function vediXml(e:MouseEvent):void
+	{
+		var n:String = e.target.name
+		var inx = n.substr(1,n.length-1)
+		visXml.text = dati[inx].xml	
+		visXml.visible = true
+	}
+	private function spegniXml():void
+	{
+		visXml.visible = false
+	}
+	
+	public function  convertAsMs(AS400TimeStamp:String):int 
+	{	
+		var hrAs = int( AS400TimeStamp.substr(11,2) )
+		var miAs = int( AS400TimeStamp.substr(14,2) )
+		var seAs = int( AS400TimeStamp.substr(17,2) )
+		var msAs = int( AS400TimeStamp.substr(20,3) )
+		return hrAs*3600000 + miAs * 60000 + seAs * 1000 + msAs
+	}
+	
+	public function  convertMs(pcTime:Date):int 
+	{	
+		return  pcTime.getHours() * 3600000 +
+				 pcTime.getMinutes() * 60000 + 
+				 pcTime.getSeconds() * 1000 + 
+				 pcTime.getMilliseconds() 
+	}
+	
+	
+	
+	private function grafico(l:UIComponent, color:int, value:Number):void	
+	{				
+		var destin = l.measuredWidth + 5 + value* 100
+		// a seconda del flag cambia il colore
+		testi.graphics.lineStyle(6, color )
+		testi.graphics.moveTo(l.measuredWidth + 5, l.y+l.measuredHeight/2 )
+		testi.graphics.lineTo(destin, l.y+l.measuredHeight/2)
+		if (destin>maxopen) maxopen = destin 
+	}
+	
+	private var opened:Boolean = false
+	private var maxopen:int = 0
+	
+	private function opClos():void	
+	{
+		this.parent.addChild(this.parent.removeChild(this))
+		opened=!opened
+		if (!opened)
+		{
+			testi.visible = false
+			visXml.visible = false
+			openClose.label= "Open"
+			this.setStyle("backgroundColor", null)
+			this.width = 60
+		}
+		else
+		{
+			generateStat()
+			testi.visible = true
+			
+			openClose.label= "Close"
+			this.setStyle("backgroundColor", 0x000066)
+			this.width = maxopen + 20 + visXml.width
+			this.height = 500
+		}
+	}
+	
+	]]></mx:Script>
+	
+	<mx:Button id="openClose" label="{opened ? 'close' : 'stat'}" click="opClos()" tabEnabled="false" />
+	<mx:Button id="lastInput" left="60" label="last input" click="lastInp()" tabEnabled="false" />
+	<mx:VBox id="testi" visible="{opened}" verticalGap="1" top="25" />
+	<mx:TextArea id="visXml"  visible="false"  right="0" top="25" width="400" height="100%" click="spegniXml()" />
+</mx:Canvas>

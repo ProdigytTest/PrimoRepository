@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+	
+	<!-- Sezione dedicata ai default di progetto -->
+	<projectSection>
+		
+
+	<skinProperties>
+
+		<styles>
+			
+			<!-- nota: alcuni defaults sono a discrezione utente, altri sono obbligatori come inizializzazione componente
+				es. text vuoto, enabled false per input, background alpha per sfondi etc.... VERIFICARE!!!!!!!!! -->
+				
+		<global>
+			<default
+				backgroundColor="0x000000"
+				backgroundAlpha="0"
+				backgroundImage=""
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="18"
+				fontWeight="normal"
+				borderColor="0"
+				borderStyle="none"
+				borderSize="0"
+				borderRadius="0"
+				shadow="false"
+				state=""
+				visible="true"/>
+				
+			<LogoOmbreggiato
+				bevel="bevel"
+			/>	
+			<!--  NEW v1.4: colore del control button della finestra desktop -->
+			<PulsanteDiControllo 
+				backgroundColor="0x627fbb"
+				backgroundAlpha="1"
+				borderRadius="10"
+				width="35"
+				height="35"
+			/>	
+			<!--  NEW v1.4: immagine del control button della finestra desktop -->
+			<ImmagineDelPulsanteDiControllo 
+				backgroundImage="assets/logo2.png"
+				x="-15"
+				y="-5"
+				width="99"
+				height="84"
+				scaleX="0.5"
+				scaleY="0.5"
+			/>
+			<!--  NEW v1.4: colore dei bordi della finestra desktop -->
+			<BordiDellaFinestra 
+				borderColor="0x000099"
+				borderStyle="solid"
+				borderSize="2"
+				borderRadius="10"
+				shadow="false"
+			/>	
+			
+			<logo
+				backgroundImage="assets/logo3.png"
+			/>
+			
+			<SottotitoloDellaFinestraDiConnessioni
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="18"
+				fontWeight="bold"
+				rotation="-90"	
+				align="center"
+			/>
+			
+<!--
+			<PYLabelSpalsh
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="18"
+				fontWeight="bold"	
+			/>
+-->
+			
+			<TitoloDellaFinestraDiConnessioni 
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="36"
+				fontWeight="bold"
+				rotation="-90"
+				text="EDPTouch Client"
+				align="center"
+			/>
+			
+<!--
+			<PYLabelBigSpalsh
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="38"
+				fontWeight="bold"
+			/>
+-->
+			
+			<TitoloDellaFinestraDiPresentazione
+				foregroundColor="0xffffff"
+				foregroundAlpha=".2"
+				fontFamily="Arial"
+				fontSize="38"
+				fontWeight="bold"
+				rotation="-90"
+				text="EDPTouch"	
+			/>
+			
+			<EtichettaDellaFinestraDiPresentazione
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="13"
+			/>
+
+			<PulsanteGenerico
+				backgroundColor="0x627fbb"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				align="center"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x2605FF"
+				toColorAlpha="1"
+				toColorRatio="128"
+			/>
+			
+<!--
+			<ButtonLogIn
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="center"
+
+			/>
+-->
+
+			<EtichettaDellaFinestraDiConnessioni
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="13"
+			/>
+
+			<EtichettaConfermaSalvataggio
+				backgroundColor="0xffffff"
+				backgroundAlpha="0"
+				foregroundColor="0xE32219"
+				foregroundAlpha="1"
+				fontSize="15"
+				fontWeight="bold"
+			/>
+			
+			<EtichettaMessaggio
+				backgroundAlpha="1"
+				backgroundColor="0xFFFFFF"
+				borderAlpha="1"
+				borderColor="0xE32219"
+				borderSize="1"
+				borderStyle="solid"
+				foregroundAlpha="1"
+				foregroundColor="0xE32219"
+				fontSize="15"
+				fontWeight="normal"
+				visible="false"
+				marginTop="2"
+				marginRight="4"
+				marginBottom="2"
+				marginLeft="4"
+			/>
+			
+			<EtichettaConnessione
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="13"
+			/>
+			
+			<LineaDiSeparazioneLogIn
+				backgroundColor="0xffffff"
+				backgroundAlpha="0"
+				borderColor="0x960302"
+				borderStyle="solid"
+				borderSize="1"
+				borderSides="left"
+				borderAlpha=".2"
+			/>
+			
+			<PYButton
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="13"
+			/>
+			
+			<PYButtonError
+				backgroundAlpha="0"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+			<PYButtonLogin
+				backgroundAlpha="0"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+			<CostanteDellaFinestraDiConnessioni
+				backgroundColor="0xffffff"
+				backgroundAlpha="0"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				align="right"
+			/>
+			<CampoDiInputDellaFinestraDiConnessioni
+				backgroundColor="0xeeeeee"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<CampoDiInputObbligatorioDellaFinestraDiConnessioni
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+
+			<CampoDiInputDisabilitatoDellaFinestraDiConnessioni
+				backgroundColor="0xeeeeee"
+				backgroundAlpha="1"
+				foregroundColor="0x333333"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				borderColor="0x333333"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<EtichettaConnessioneEvidenziata
+				backgroundColor="0xe8e7e7"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+			/>
+			
+			<EtichettaConnessioneSelezionata
+				backgroundColor="0x627fbb"
+				backgroundAlpha="1"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+			/>
+			
+			<ContenitoreSx
+				backgroundColor="0x627fbb"
+				backgroundAlpha=".8"
+				borderColor="0xffffff"
+				borderStyle="none"
+				borderSize="1"
+				borderRadius="30"
+				bevel="bevel"
+				shadow="true"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x627fbb"
+				toColorAlpha="1"
+				toColorRatio="255"				
+				
+				
+			/>
+			
+			<ContenitoreInterno
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderRadius="30"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<ContenitoreEditoreConnessione
+				borderColor="0xdddddd"
+				borderStyle="solid"
+				borderSides="left"
+				borderSize="1"
+			/>
+			
+			<Riquadro
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0x627fbb"
+				foregroundAlpha="1"
+				spacing="1"
+			
+			/>
+			
+			<RiquadroAttributiComuni
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				spacing="1"
+
+			/>
+			
+			<RiquadroAttributiConnessione
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				spacing="1"
+				borderColor="0xdddddd"
+				borderStyle="solid"
+				borderSides="left"
+				borderSize="1"				
+			/>
+
+			<EtichettaElencoConessioni
+				backgroundColor="0xffffff"
+				backgroundAlpha="0"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="15"
+				fontWeight="bold"
+			/>
+			
+			<RiquadroAvvertenza
+				backgroundColor="0x627fbb"
+				backgroundAlpha=".8"
+				borderColor="0xffffff"
+				borderStyle="none"
+				borderSize="1"
+				borderRadius="30"
+				bevel="bevel"
+				shadow="true"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x2605FF"
+				toColorAlpha="1"
+				toColorRatio="255"				
+			/>
+			
+			<PulsanteAvvertenza
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="center"
+			/>
+			
+			<PannelloDiControllo
+				backgroundColor="0x627fbb"
+				backgroundAlpha="1"
+				borderSize="1"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x627fbb"
+				toColorAlpha="1"
+				toColorRatio="128"			
+			/>
+			
+			<CostanteDelPannelloDiControllo
+				fontFamily="Arial"
+				fontSize="12"
+				fontWeight="bold"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				align="left"
+				marginRight="20"
+			/>
+			
+			<CampoDiInputDelPannelloDiControllo
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				fontFamily="Arial"
+				fontSize="14"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="left"
+			/>
+			
+			<ContenitoreSx_Personalizzato
+				autosize="false"
+				 width="800"
+				  height="457"
+				   borderColor="0x000000"
+				    backgroundImage="assets/elelco/sfondo_elelco.png"
+				    	 borderStyle="solid"	
+
+			/>
+			
+			
+			
+			<ContenitoreInterno_Personalizzato
+				
+				backgroundColor="0x204259" 
+				backgroundAlpha="1"
+				shadow="true"
+				shadowColor="0x90b2c4"
+			/>
+			
+			<CampoDiInput_Personalizzato
+				backgroundColor="0xeeeeee"
+				backgroundAlpha="1"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				fontSize="13"
+				height="21"
+				borderColor="0x000000"
+				borderStyle="solid"
+				borderSize="1"
+			/>
+			
+			<PulsanteDiLogin_Personalizzato
+				includeInLayout="false"
+				backgroundColor="0xffffff"
+				backgroundAlpha="1"
+				borderSize="1"
+				borderRadius="10"
+				fontFamily="Arial"
+				fontSize="15"
+				foregroundColor="0x000000"
+				foregroundAlpha="1"
+				align="center"
+			/>
+			
+			<PulsanteBianco_Personalizzato
+				backgroundAlpha="0"
+				foregroundColor="0xffffff"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+				
+				
+			<PulsanteDiErrore_Personalizzato
+				backgroundAlpha="0"
+				foregroundColor="0xbb0000"
+				foregroundAlpha="1"
+				fontSize="13"
+			/>
+				
+			<Plus_Personalizzato 
+				backgroundImage="assets/elelco/elelco_plus.png"	
+				autosize="false"	
+			/>
+			
+			
+			<!-- Stili projectBox -->
+			
+			
+			<ProjectBoxattrStyle 
+				backgroundColor="0x999999"
+				backgroundAlpha="1"	
+				foregroundColor="0x333333"
+				paddingTop="5"
+				paddingBottom="5"
+				paddingLeft="5"
+				paddingRight="5"
+				borderStyle="solid"
+				borderRadius="10"
+				shadow="true"
+				shadowColor="0x666666"
+				borderSize="1"
+				borderColor="0x666666"
+			/>
+			
+			<attrLabelStyle 
+				backgroundColor="0xcccccc"	
+				foregroundColor="0x000000"
+			/>
+			
+			<attrInputTextStyle 
+				backgroundColor="0xffffff"	
+				backgroundAlpha="1"
+				foregroundColor="0x333333"
+				marginTop="5"
+				marginBottom="5"
+				marginLeft="5"
+				marginRight="5"
+				borderStyle="solid"
+				borderSize="1"
+				borderColor="0x666666"
+			/>
+			
+			<ProjectBoxItemStyle 
+				backgroundColor="0xcccccc"	
+				backgroundAlpha="1"
+				foregroundColor="0x333333"
+				marginTop="5"
+				marginBottom="5"
+				marginLeft="5"
+				marginRight="5"
+				borderStyle="solid"
+				borderSize="1"
+				borderRadius="10"
+				shadow="true"
+				shadowColor="0x666666"	
+				borderColor="0x666666"
+			/>
+			
+			<ProjectBoxOverStyle 
+				backgroundColor="0x666666"	
+				foregroundColor="0xffffff"
+			/>
+			
+			<ProjectBoxSelectedStyle 
+				backgroundColor="0x999999"	
+				foregroundColor="0xffffff"	
+			/>
+			
+			<ProjectBoxPopStyle 
+				spacing="10"
+			/>
+			
+			
+			<!--  NEW v1.4: sezione dedicata al menu di sistema della window desktop -->
+			
+			 	<flowItem 	
+			 				borderRadius="10"
+			 				foregroundColor="0xffffff" 
+						 	foregroundAlpha="1" 
+						 	backgroundColor="0x999999" 
+						 	backgroundAlpha="0" 
+						 	fontWeight="normal" 
+						 	fontSize="14" 
+						 	borderStyle="solid"    
+						 	gradientType="none" 
+						 	toColor="0x222222" 
+						 	gradientAngle="90" 
+						 	borderColor="0x666666" 
+						 	borderSize="0" 
+						 	borderAlpha="0" 
+						 	borderSides="none" 
+						 	fontFamily="Arial"
+						 	autoSize="true"
+						 	marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5"/>
+               
+               	<flowOver 
+               				borderRadius="10"
+			               	foregroundColor="0xffff66" 
+			               	foregroundAlpha="1" 
+			               	backgroundAlpha="0" 
+			               	borderAlpha="0" 
+			               	borderSides="none" 
+			               	borderStyle="solid" 
+			               	fontFamily="Arial"/>
+               
+               	<flowTitle 
+               				borderRadius="10"
+			               	foregroundColor="0xbbbbbb" 
+			               	foregroundAlpha="1" 
+			               	backgroundColor="0x333333" 
+			               	backgroundAlpha="0" 
+			               	fontWeight="normal" 
+			               	fontSize="14" 
+			               	borderAlpha="0" 
+			               	borderSides="none" 
+			               	borderStyle="solid" 
+			               	fontFamily="Arial"
+			               	autoSize="true"
+			               	marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5"/>
+               
+               	<flowSelected 
+               				borderRadius="10"
+			               	foregroundColor="0xffffff" 
+			               	foregroundAlpha="1" 
+			               	backgroundColor="0xF33329" 
+			               	backgroundAlpha="1"
+			               	fontWeight="normal" 
+			               	fontSize="14" 
+			               	borderAlpha="0" 
+			               	borderSides="none" 
+			               	borderStyle="solid" 
+			               	fontFamily="Arial"
+			               	autoSize="true"
+			               	marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5" 
+/>
+				
+				<flowSubMenu 
+							borderRadius="10"
+							backgroundAlpha="0" 
+							backgroundColor="0x333333" 
+							borderAlpha="0" 
+							borderSides="none" 
+							borderStyle="solid" 
+							foregroundAlpha="1" 
+							foregroundColor="0xffffff" 
+							fontFamily="Arial" 
+							fontSize="14" 
+							fontWeight="normal"
+							autoSize="true"
+							marginTop="2"
+							marginBottom="11"
+							marginLeft="5"
+							marginRight="5"/>  
+
+				<touch
+					backgroundImage="assets/touch400.png"
+			/>
+			
+			
+				<LoginContenitoreSx
+					backgroundColor="0xFFFFFF"
+					backgroundAlpha="0"
+					borderColor="0xDDDDDD"
+					borderStyle="none"
+					borderSize="1"
+					borderRadius="0"
+					bevel="none"
+					shadow="false"
+					x="10"
+					y="350"
+				/>
+				
+				<LoginChiudi
+					backgroundImage="assets/close.png"
+				/>
+				
+				<LoginSeparatoreVerticale
+					backgroundColor="0xffffff"
+					backgroundAlpha="0"
+					borderColor="0x960302"
+					borderStyle="none"
+					borderSize="1"
+					borderSides="left"
+					borderAlpha=".2"
+				/>
+				
+				<LoginEtichetta
+					backgroundAlpha="0"
+					foregroundColor="0x000000"
+					foregroundAlpha="1"
+					fontSize="13"
+					width="88"
+					height="33"
+					marginTop="6"
+					align="center"
+				/>
+			
+				<LoginEtichettaErrore
+					backgroundAlpha="0"
+					foregroundColor="0xE32219"
+					foregroundAlpha="1"
+					fontSize="13"
+					fontWeight="bold"
+					height="33"
+					marginTop="6"
+				/>
+			
+				<LoginCampoFormulario
+					backgroundColor="0xffffff"
+					backgroundAlpha="1"
+					foregroundColor="0x000000"
+					foregroundAlpha="1"
+					fontSize="13"
+					borderColor="0xbbbbbb"
+					borderRadius="0"
+					borderStyle="solid"
+					borderSize="1"
+					marginTop="6"
+					marginLeft="6"
+					width="232"
+					height="33"
+					
+				/>
+				
+				<LoginPulsanteAnnulla
+					backgroundColor="0xffffff"
+					backgroundAlpha="1"
+					borderColor="0xf70000"
+					borderSize="1"
+					borderAlpha="1"
+					borderRadius="0"
+					borderStyle="solid"
+					fontFamily="Arial"
+					fontSize="15"
+					foregroundColor="0xf70000"
+					foregroundAlpha="1"
+					align="center"
+					width="88"
+					height="45"
+					marginTop="12"	
+					shadow="none"
+					shadowColor="0xE32219"
+				/>
+			
+				<LoginPulsante2x1
+					backgroundColor="0xf70000"
+					backgroundAlpha="1"
+					borderColor="0xf70000"
+					borderSize="1"
+					borderAlpha="1"
+					borderRadius="0"
+					borderStyle="solid"
+					fontFamily="Arial"
+					fontSize="15"
+					foregroundColor="0xFFFFFF"
+					foregroundAlpha="1"
+					align="center"
+					width="88"
+					height="44"
+					marginTop="12"
+				/>
+			
+				<LoginPulsante3x1
+					backgroundColor="0xf70000"
+					backgroundAlpha="1"
+					borderColor="0xf70000"
+					borderSize="1"
+					borderAlpha="1"
+					borderRadius="0"
+					borderStyle="solid"
+					fontFamily="Arial"
+					fontSize="15"
+					foregroundColor="0xFFFFFF"
+					foregroundAlpha="1"
+					align="center"
+					width="132"
+					height="44"
+					marginTop="12"
+				/>
+
+
+			</global>
+			 
+			 <!--  NEW v1.4: sezione dedicata al menu di sistema della window desktop -->
+			
+			 <FlowContainer>
+               
+               <default layout="vertical" labelLength="autosize" fontFamily="Arial" monoSpaced="true" fontSize="16" textColor="0x333333" highColor="0xffffff" lineColor="0x333333" popAreaStyle="flow" popAreaItemStyle="flowItem" popAreaOverStyle="flowOver" popAreaSelectedStyle="flowSelected" hGap="8" flowCenter="flow_on_item" keyboardEnabled="true" popAreaSubMenuStyle="flowSubMenu" popAreaTitleStyle="flowTitle" allowMove="false" includeArea="false" />
+               
+            </FlowContainer>
+            
+             <FlowContainerItem>
+               
+               <default borderRadius="20" />
+               
+               <flow 
+                borderRadius="10"
+               	layout="horizontal" 
+               	backgroundColor="0x627fbb"
+				backgroundAlpha="1"
+				borderColor="0x000000"
+				borderStyle="none"
+				borderSize="1"
+				bevel="none"
+				shadow="false"
+				gradientType="linear"
+				gradientAngle="90"
+				toColor="0x627fbb"
+				toColorAlpha="1"
+				toColorRatio="255"	/>
+               
+            </FlowContainerItem>
+            <!--  NEW v1.4: fine della sezione dedicata al menu di sistema della window desktop -->
+			
+		   <PYContainer>
+           		<default/>
+           		<splash percentHeight="100" percentWidth="100" />
+          </PYContainer>
+          	  
+          <PYComponent>
+             	<default/>
+          </PYComponent>
+          	   
+          <FieldO>
+              	<default/>
+          </FieldO>
+          	   
+          <FieldIO>
+              	<default/>
+          </FieldIO>
+          	    
+          <PYLabel>
+              	<default/>
+				<TransformItem
+					backgroundAlpha="0" />
+				<TransformOver
+					backgroundAlpha="1"
+					backgroundColor="0xAACCFF"	/>
+				<TransformSelected
+					backgroundAlpha="1"
+					backgroundColor="0x66BBFF"	/>			
+          </PYLabel>
+			
+			<PYScrollingPage>
+				<default/>
+				<TransformScrollingPage 
+					backgroundAlpha="0.6" 
+					backgroundColor="0xcccccc" 
+					borderColor="0x000011" 
+					borderStyle="solid" 
+					borderAlpha=".6" 
+					borderSize="1" 
+					foregroundAlpha="1" 
+					foregroundColor="0x000011" 
+					toColor="0x00000e" 
+					toColorAlpha="1" 
+					gradientAngle="90"
+					width="13" />
+				<TransformScrollingPage/>
+			</PYScrollingPage>
+
+			<PYNBoxSelectable>
+				<TransformBox
+					itemStyle="TransformItem"
+					overStyle="TransformItemOver"
+					selectedStyle="TransformItemSelected"	/>
+			</PYNBoxSelectable>
+			
+			<PYButton>
+				<SaveRule
+					align="center"
+					backgroundAlpha="1"
+					backgroundColor="0x22E322"
+					borderRadius="10"
+					gradientAngle="90"
+					gradientType="linear"
+					toColor="0xABE3AB"
+					marginTop="5"
+					/>
+				<SaveRuleOver
+					align="center"
+					backgroundAlpha="1"
+					backgroundColor="0xE3FFE3"
+					borderRadius="10"
+					gradientAngle="90"
+					gradientType="linear"
+					toColor="0xABE3AB"
+					marginTop="5"
+					/>
+				<CancelRule
+					align="center"
+					backgroundAlpha="1"
+					backgroundColor="0xAAAAAA"
+					borderRadius="10"
+					gradientAngle="90"
+					gradientType="linear"
+					toColor="0xCCCCCC"
+					marginTop="5"
+					/>
+				<CancelRuleOver
+					align="center"
+					backgroundAlpha="1"
+					backgroundColor="0xDEDEDE"
+					borderRadius="10"
+					gradientAngle="90"
+					gradientType="linear"
+					toColor="0xCCCCCC"
+					marginTop="5"
+					/>
+				<DeleteRule
+					align="center"
+					backgroundAlpha="1"
+					backgroundColor="0xE36666"
+					borderRadius="10"
+					gradientAngle="90"
+					gradientType="linear"
+					toColor="0xE3ABAB"
+					marginTop="5"
+					/>
+				<DeleteRuleOver
+					align="center"
+					backgroundAlpha="1"
+					backgroundColor="0xE32222"
+					borderRadius="10"
+					gradientAngle="90"
+					gradientType="linear"
+					toColor="0xE3ABAB"
+					marginTop="5"
+					/>
+					
+			</PYButton>
+
+		</styles>
+
+
+	<pfkeys>
+	 	<navigation>
+		</navigation>
+	 </pfkeys>
+		
+	</skinProperties>
+	
+	</projectSection>
+	
+
+	<desktopsSection> 
+	 
+		
+	
+	</desktopsSection>
+	
+
+	<fontsSection>
+		<fontsToLoad>
+			<font name="Arial" />
+		</fontsToLoad>
+	</fontsSection>
+	
+</root>

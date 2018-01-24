@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="400" height="300">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+	
+	private var build:Boolean = false
+	private var tempVal:Array
+		
+	override public function set data(value:Object):void
+	{
+	_data = value;
+	if (!build)
+	{
+
+	}		
+		----> legge la parte xm l relativa ai dati e valorizza i componenti crerati
+		for each .. tag xml
+		{
+		<campo1>valore</campo1>
+		
+		if (build)
+		{
+			this.getchildByName(xml.localName().toString()).text = xml.text() 
+		
+		}	
+		else
+		{
+			tempVal.push( {name:xml.localName().toString() , data:xml.text()  }
+		}	
+		
+			
+	
+	}
+
+	
+			
+	// ALTERNATIVA		
+			
+	 nella init()   --> addeventListener(HeaderEvent.GET_BUILD_XML, func)
+		 
+	private var func(e:HeaderEvent)
+	{
+		var buildXML:XML = e.buildXML
+		
+	//		<build>
+	//		<component name="campo1"    className="mx.controls.label" width="150" height="20" backgroundColor="dddd" />
+	//		<component name="campo2" 	className="mx.controls.label"  width="150" height="20" backgroundColor="dddd" />
+	//		<component name="campo3" 	className="TextInput" width="150" height="20" backgroundColor="dddd" />
+	//		</build>
+		
+			if (!build)
+			{
+		
+			for each --- ogni riga xml contenuta in <build>
+			{	
+				--> costruisce il componente e esegue addchild
+				es: <component name="campo1"    className="mx.controls.label" width="150" height="20" backgroundColor="dddd" />
+				
+				var obj:object = ......
+					obj.name="campo1"
+					addChild(obj)
+				....
+			}	
+			build = true
+			if (tempVal.length>0
+				{
+				for each (var o:Object in tempVal)
+				{
+					this.getchildByName(o.name).text = o.data
+				}
+				tempVal=[]
+			}
+		
+	}
+			
+			
+			
+			
+			
+			
+			
+	
+		]]>
+	</fx:Script>
+	
+</s:Group>

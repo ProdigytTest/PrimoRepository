@@ -1,0 +1,11 @@
+<localConfig>
+    <splashStyle name='data/WebStyle.xml' />
+    <config autoStart='false' log='true' notepadDirectory='C:\Program Files (x86)\Notepad++\Notepad++.exe' verbose="true"/>
+    <connections>
+        <connection source="DSPF" name="connessione iniziale" type="socket" address="" port="" uid="" cmd="" isDefault="false" projectLocation="server" projectFile="" deviceName="User"/>
+        <connection source="DSPF" name="ASI DEMO WEB" type="socket" address="212.45.134.30" port="10004" uid="touch400" cmd="ls_t400/addlib" isDefault="false" projectLocation="server" projectFile="WSE400V330/PRJ_DEMOW" deviceName="WEB"/>
+        <connection source="DSPF" name="GLT PRJ_GLWEB" type="socket" address="212.45.134.30" port="10004" uid="touch400" pw="" cmd="GAATOUCH/PYSTART" isDefault="false" projectLocation="server" projectFile="GLE_TOUCH/PRJ_GLWEB" menu="" developer="true" deviceName="guest"/>
+        <connection source="DSPF" name="GLT PRJ_GLWEB LOCAL" type="socket" address="212.45.134.30" port="10004" uid="touch400" pw="" cmd="GAATOUCH/PYSTART" isDefault="false" projectLocation="local" projectFile="C:\Users\Alexandre\Documents\ProdigytClient\212.45.134.30.10003\PRJ_GLWEB.xml" menu="" developer="true" deviceName="guest"/>
+		<connection source="DSPF" name="CapGemini PR_CG_BAR" type="socket" address="10.81.108.143" port="5545" uid="prodigy331" cmd="W7BAS/MENU01P331" isDefault="false" projectLocation="server" projectFile="WSE400V331/PRJ_CG_bar" deviceName="CGWEB"/>
+   </connections>
+</localConfig>
