@@ -1,0 +1,1084 @@
+﻿<componentsSection>
+	<components>
+		<PRIMARIES sequence="0">
+			<PYComponent className="it.prodigyt.components.core.PYComponent" icon="LabelIcon" category="private">
+				<attr name="alpha" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="autoSize" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="backgroundAlpha" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="backgroundColor" renderer="PYBoxColorChooser" defaultValue="0x000000" enumerate="" group="style"/>
+				<attr name="backgroundImage" renderer="PYImageChooser" defaultValue="" enumerate="" group="style"/>
+				<attr name="backgroundImageTile" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="style"/>
+				<attr name="backgroundImageSmooth" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="style"/>
+				<attr name="backgroundImageStore" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="style"/>
+				<attr name="bevel" renderer="FieldIO" defaultValue="none" enumerate="bevel,inset,none" group="style"/>
+				<attr name="bgColorRatio" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="blendMode" renderer="FieldIO" defaultValue="normal" enumerate="add,alpha,darken,difference,erase,hardlight,invert,layer,lighten,multiply,normal,overlay,screen,shader,subtract" group="style"/>
+				<attr name="borderAlpha" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="borderColor" renderer="PYBoxColorChooser" defaultValue="0x000000" enumerate="" group="style"/>
+				<attr name="borderRadius" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="borderSides" renderer="FieldIO" defaultValue="" enumerate="all,left,bottom,right,top" group="style"/>
+				<attr name="borderSize" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="borderStyle" renderer="FieldIO" defaultValue="" enumerate="solid,none" group="style"/>
+				<attr name="clip" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="enabled" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="foregroundAlpha" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="foregroundColor" renderer="PYBoxColorChooser" defaultValue="0x000000" enumerate="" group="style"/>
+				<attr name="scaleX" renderer="PYStepper" defaultValue="1" enumerate="" group="layout"/>
+				<attr name="scaleY" renderer="PYStepper" defaultValue="1" enumerate="" group="layout"/>
+				<attr name="shadow" renderer="PYToggle" defaultValue="false" enumerate="false,light,medium,strong,true,bitmap" group="style"/>
+				<attr name="shadowColor" renderer="PYBoxColorChooser" defaultValue="" enumerate="" group="style"/>
+				<attr name="shadowAlpha" renderer="PYStepper" defaultValue="" enumerate="" group="style"/>
+				<attr name="shadowSides" renderer="FieldIO" defaultValue="" enumerate="all,left,bottom,right,top" group="style"/>
+				<attr name="state" renderer="FieldIO" defaultValue="normal" enumerate="normal,reverse,invisible,trash,colsep" group="other"/>
+				<attr name="shape" renderer="FieldIO" defaultValue="none" enumerate="none,arrow_right,doublearrow_right,right_tab,both_tab,callout_north,callout_east,callout_west,callout_south" group="style"/>
+				<attr name="visible" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="width" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="height" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="percentWidth" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="percentHeight" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="x" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="y" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="gradientType" renderer="FieldIO" defaultValue="" enumerate="none,linear,radial" group="style"/>
+				<attr name="gradientPosX" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="gradientPosY" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="gradientRadius" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="toColor" renderer="PYBoxColorChooser" defaultValue="0x000000" enumerate="" group="style"/>
+				<attr name="toColorAlpha" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="toColorRatio" renderer="PYStepper" defaultValue="255" enumerate="" group="style"/>
+				<attr name="gradientAngle" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="style" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="includeInLayout" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="toolTip" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="toolTipStyle" renderer="FieldIO" defaultValue="" enumerate="" group="other" subComponent="PYLabel"/>
+				<attr name="toolTipTime" renderer="PYStepper" defaultValue="1000" enumerate="" group="other"/>
+				<attr name="toolTipWidth" renderer="PYStepper" defaultValue="200" enumerate="" group="other"/>
+				<attr name="name" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="fontFamily" renderer="PYFontChooser" defaultValue="Arial" enumerate="Arial,Arial Narrow,Orbitron,DejaVu Sans,Vera Sans Mono,Consolas,Norma Fixed,Futurist Fixed,Lotte Paperfang,DejaVu Sans Mono,Liberation Mono,Free Mono,Arial Mono,Monospac821,Roboto,Roboto Thin,Roboto Light,Roboto Medium,Roboto Black,Roboto Condensed,Avenir,Futura,FuturaHeavy,MyriadPro,MyriadProHeavy,Tahoma,Verdana" group="text"/>
+				<attr name="fontSize" renderer="PYStepper" defaultValue="" enumerate="" group="text"/>
+				<attr name="fontWeight" renderer="FieldIO" defaultValue="normal" enumerate="normal,semiBold,bold" group="text"/>
+				<attr name="verticalAlign" renderer="FieldIO" defaultValue="none" enumerate="none,top,center,bottom" group="layout"/>
+				<attr name="horizontalAlign" renderer="FieldIO" defaultValue="none" enumerate="none,left,center,right" group="layout"/>
+				<attr name="column" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="row" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="rotation" renderer="FieldIO" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="mouseEnabled" renderer="PYStepper" defaultValue="true" enumerate="true,false" group="other"/>
+			</PYComponent>
+			<PYLabel className="it.prodigyt.components.core.PYLabel" icon="LabelIcon">
+				<attr name="align" renderer="FieldIO" defaultValue="left" enumerate="left,center,right" group="layout"/>
+				<attr name="alignVertical" renderer="FieldIO" defaultValue="top" enumerate="top,center,bottom" group="layout"/>
+				<attr name="subpixelAlign" renderer="PYStepper" defaultValue="true" enumerate="true,false" group="text"/>
+				<attr name="maxChars" renderer="PYStepper" defaultValue="" enumerate="" group="text"/>
+				<attr name="text" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="zeroSuppress" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="text"/>
+				<attr name="letterSpacing" renderer="FieldIO" defaultValue="0" enumerate="" group="text"/>
+				<attr name="lineSpacing" renderer="FieldIO" defaultValue="0" enumerate="" group="text"/>
+				<attr name="wordWrap" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="autoHeight" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="monoSpaced" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="calcSizePercentWidth" renderer="PYStepper" defaultValue="60" enumerate="" group="text"/>
+				<attr name="calcSizeMinCharNumber" renderer="PYStepper" defaultValue="60" enumerate="" group="text"/>
+				<attr name="calcSize" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="useContainerTTW" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="useContainerTTH" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="marginRight" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="marginBottom" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="marginLeft" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="marginTop" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="dispatchTo" renderer="PYToggle" defaultValue="none" enumerate="none,all" group="other"/>
+				<attr name="dispatchValue" renderer="PYToggle" defaultValue="" enumerate=",FieldOProgress.changeMaximum,DoubleClick" group="other"/>
+				<attr name="dispatchAttribute" renderer="PYToggle" defaultValue="" enumerate="none,text" group="other"/>
+				<attr name="fullDimension" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="highLightColor" renderer="PYBoxColorChooser" defaultValue="0xFF0000" enumerate="" group="style"/>
+				<attr name="dynamicAttributes" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="dynamicTarget" renderer="FieldIO" defaultValue="_self" enumerate="_self,_parent" group="style"/>				
+			</PYLabel>
+			<PYLabelImage className="it.prodigyt.components.gui.as3.PYLabelImage" icon="LabelIcon">
+				<attr name="iconColor" renderer="PYBoxColorChooser" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconAlign" renderer="FieldIO" defaultValue="CENTER" enumerate="CENTER,N,S,W,E" group="style"/>
+				<attr name="iconImage" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconGap" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconScale" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconFit" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="style"/>
+				<attr name="showText" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other" />
+			</PYLabelImage>
+<!--
+			<PYLabelImageV2 className="it.prodigyt.components.gui.as3.PYLabelImage" icon="LabelIcon">
+				<attr name="iconColor" renderer="PYBoxColorChooser" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconAlign" renderer="FieldIO" defaultValue="CENTER" enumerate="NW,N,NE,W,CENTER,E,SW,S,SE" group="style"/>
+				<attr name="iconImage" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconGap" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconScale" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="iconFit" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="style"/>
+			</PYLabelImageV2>
+-->
+			<PYInputText className="it.prodigyt.components.core.PYInputText" icon="LabelIcon">
+				<attr name="password" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="freeExit" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="restrict" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="moveOnSoftKeyboard" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+			</PYInputText>
+			<PYContent className="it.prodigyt.components.core.PYContainer" icon="LabelIcon" category="private"/>
+			<PYContainer className="it.prodigyt.components.core.PYContainer" icon="LabelIcon" category="public">
+				<attr name="layout" renderer="FieldIO" defaultValue="free" enumerate="vertical,horizontal,tile,free" group="layout"/>
+				<attr name="horizontalScrollAlign" renderer="PYStepper" defaultValue="left" enumerate="none,left,right,atBounds" group="layout"/>
+				<attr name="verticalScrollAlign" renderer="PYStepper" defaultValue="top" enumerate="none,top,bottom,atBounds" group="layout"/>
+				<attr name="verticalAutosize" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="horizontalAutosize" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="alignOnScroll" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="tileColumns" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="horizontalPadCenter" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="verticalPadCenter" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="verticalScrolling" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="horizontalScrolling" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="tileRows" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="includeInvisibles" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="paddingRight" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="paddingBottom" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="paddingLeft" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="paddingTop" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="contentDetect" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="verticalScrollBar" renderer="FieldIO" defaultValue="none" enumerate="none,internal,external,arrow" group="layout"/>
+				<attr name="horizontalScrollBar" renderer="FieldIO" defaultValue="none" enumerate="none,internal,external,arrow" group="layout"/>
+				<attr name="verticalScrollBarAppearance" renderer="FieldIO" defaultValue="proximity" enumerate="proximity,visible,on_touch" group="layout"/>
+				<attr name="horizontalScrollBarAppearance" renderer="FieldIO" defaultValue="proximity" enumerate="proximity,visible,on_touch" group="layout"/>
+				<attr name="scrollbardimension" renderer="PYStepper" defaultValue="20" enumerate="" group="layout"/>
+				<attr name="scrollOnFocus" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="scrollBarAlwaysShown" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="animatedScroll" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="zoomable" renderer="PYToggle" defaultValue="false" enumerate="false,true" group="other"/>
+				<attr name="scrollBarStyle" renderer="PYToggle" defaultValue="default" enumerate="" group="style" subComponent="PYScrollBar"/>
+				<attr name="launchServices" renderer="PYToggle" defaultValue="false" enumerate="true,false,onClick" group="other"/>
+				<attr name="verticalContentAlign" renderer="PYToggle" defaultValue="none" enumerate="none,top,center,bottom" group="layout"/>
+				<attr name="horizontalContentAlign" renderer="PYToggle" defaultValue="none" enumerate="none,left,center,right" group="layout"/>
+				
+				
+			</PYContainer>
+			<MapContainer className="it.prodigyt.components.base.containers.MapContainer" icon="LabelIcon" category="deprecate">
+				<attr name="mapImage" renderer="FieldIO" defaultValue="" enumerate="" group="o"/>
+				<attr name="mapElement" renderer="FieldIO" defaultValue="" enumerate="" group="o"/>
+			</MapContainer>
+		</PRIMARIES>
+		<CONTAINERS sequence="1">
+			<SeparateTableFormat className="it.prodigyt.components.base.containers.SeparateTableFormat" icon="ButtonIcon">
+				<attr name="internalStyle" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="internalGap" renderer="PYToggle" defaultValue="0" enumerate="" group="other"/>
+			</SeparateTableFormat>
+			<DisplayFile className="it.prodigyt.components.base.containers.DisplayFile" icon="ButtonIcon">
+				<attr name="floating" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="multiTouchEnabled" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+			</DisplayFile>
+			<DragContainer className="it.prodigyt.components.gui.as3.DragContainer" icon="LabelIcon" category="deprecate">
+				<attr name="leftOrTopStatus" renderer="FieldIO" defaultValue="status_home" enumerate="status_home,status_opened" group="other"/>
+				<attr name="homeX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homeY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="dividePosition" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homePosition" renderer="FieldIO" defaultValue="manual" enumerate="manual,auto" group="other"/>
+				<attr name="draggable" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="rotatable" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="scalable" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+			</DragContainer>
+			<ExpandPanel className="it.prodigyt.components.base.containers.ExpandPanel" icon="ButtonIcon">
+				<attr name="floating" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="destX" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="destY" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="destWidth" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="destHeight" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="swipe" renderer="FieldIO" defaultValue="swipe_none" enumerate="swipe_bottom,swipe_left,swipe_right,swipe_top,swipe_none" group="other"/>
+				<attr name="status" renderer="FieldIO" defaultValue="origin" enumerate="origin,destination" group="other"/>
+				<attr name="title" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="applyTransformToTitle" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="buttonPosition" renderer="FieldIO" defaultValue="button_none" enumerate="button_bottom_left,button_bottom_right,button_left_top,button_left_bottom,button_right_top,button_right_bottom,button_top_left,button_top_right,button_none" group="other" />				
+				<attr name="buttonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="other" subComponent="PYLabelImage" />
+				<attr name="buttonGap" renderer="FieldIO" defaultValue="0" enumerate="" group="other"  />
+			</ExpandPanel>
+			<ExpandFormat className="it.prodigyt.components.base.containers.ExpandFormat" icon="ButtonIcon">
+				<attr name="floating" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="clickEnabled" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="destX" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="destY" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="destWidth" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="destHeight" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="swipe" renderer="FieldIO" defaultValue="swipe_none" enumerate="swipe_bottom,swipe_left,swipe_right,swipe_top,swipe_none" group="other"/>
+				<attr name="status" renderer="FieldIO" defaultValue="origin" enumerate="origin,destination" group="other"/>
+				<attr name="title" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="applyTransformToTitle" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="buttonPosition" renderer="FieldIO" defaultValue="button_none" enumerate="button_bottom_left,button_bottom_right,button_left_top,button_left_bottom,button_right_top,button_right_bottom,button_top_left,button_top_right,button_none" group="other" />				
+				<attr name="buttonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="other" subComponent="PYLabelImage" />
+				<attr name="buttonGap" renderer="FieldIO" defaultValue="0" enumerate="" group="other"  />
+			</ExpandFormat>
+			<Panel className="it.prodigyt.components.base.containers.Panel" icon="ButtonIcon"/>
+			<PYNbox className="it.prodigyt.components.gui.as3.PYNbox" icon="ButtonIcon" category="public">
+				<attr name="spacing" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="forceAlign" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout"/>
+			</PYNbox>
+			<PYNboxDataProvider className="it.prodigyt.components.gui.as3.PYNboxDataProvider" icon="ButtonIcon" category="private">
+				<attr name="adviseOnScroll" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="optimizeRecycleRows" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+			</PYNboxDataProvider>
+			<PYNboxDataProviderNew className="it.prodigyt.components.gui.as3.PYNboxDataProvider" icon="ButtonIcon" category="private">
+				<attr name="adviseOnScroll" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="scrollEndBehaviour" renderer="PYToggle" defaultValue="elastic" enumerate="elastic,bounce" group="other"/>
+				<attr name="verticalScrollAlignTolerance" renderer="PYToggle" defaultValue="4" enumerate="" group="layout"/>
+				<attr name="horizontalScrollAlignTolerance" renderer="PYToggle" defaultValue="elastic" enumerate="" group="layout"/>
+
+			</PYNboxDataProviderNew>
+			<PYNboxExtRenderer className="it.prodigyt.components.gui.as3.PYNboxExtRenderer" icon="ButtonIcon"/>
+			<PYCoverDataProvider className="it.prodigyt.components.gui.as3.PYCoverDataProvider" icon="ButtonIcon" category="deprecate"/>
+			<FlowContainerDataProvider className="it.prodigyt.components.base.menus.FlowContainerDataProvider" icon="ButtonIcon" category="deprecate">
+				<attr name="flowStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FlowContainer"/>
+				<attr name="fieldNameItem" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="fieldTextItem" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="fieldNumItem" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="fieldNameParent" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="fieldNumParent" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</FlowContainerDataProvider>
+			<DisplayFileTabbed className="it.prodigyt.components.base.containers.DisplayFileTabbed" icon="ButtonIcon">
+				<attr name="tabStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYNBoxSelectable"/>
+				<attr name="tabItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="tabOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="tabSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="AS400ForwardFkey" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="AS400BackwardFkey" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="tabbedFormatNames" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="tabbedFormatTitles" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</DisplayFileTabbed>
+			<PYNBoxSelectable className="it.prodigyt.components.gui.as3.PYNBoxSelectable" icon="ButtonIcon" category="public">
+				<attr name="itemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="evenStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="overStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="selectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="keyboardEnabled" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="selectMethod" renderer="PYStepper" defaultValue="single" enumerate="none,single,multi" group="other"/>
+				<attr name="doubleClickMilliSecs" renderer="FieldIO" defaultValue="400" enumerate="" group="other"/>
+				<attr name="doubleClickEnabled" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="selectOnTab" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+			</PYNBoxSelectable>
+			<PYWindow className="it.prodigyt.components.gui.as3.PYWindow" icon="TextAreaIcon" category="private"/>
+			<SflRow className="it.prodigyt.components.base.containers.SflRow" icon="ButtonIcon">
+				<attr name="verticalSpacing" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="selectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="innerConstantStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="Constant"/>
+				<attr name="innerFieldOStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="FieldO"/>
+				<attr name="innerFieldIOStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="FieldIO"/>
+				<attr name="innerTableStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="BaseTableV2"/>
+			</SflRow>
+			<BaseLayout className="it.prodigyt.components.base.containers.BaseLayout" icon="ButtonIcon" category="private">
+				<attr name="verticalSpacing" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="horizontalSpacing" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="monoSpaced" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="calcSizePercentWidth" renderer="PYStepper" defaultValue="60" enumerate="" group="text"/>
+				<attr name="calcSize" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="invisibleIfEmpty" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="autoCalcSize" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="verticalCalcSize" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="horizontalCalcSize" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="innerConstantStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="Constant"/>
+				<attr name="innerFieldOStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="FieldO"/>
+				<attr name="innerFieldIOStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="FieldIO"/>
+				<attr name="innerTableStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="BaseTableV2"/>
+				<attr name="innerGenericStyle" renderer="PYStepper" defaultValue="" enumerate="" group="style" subComponent="BaseTableV2"/>
+				<attr name="trimLeftFields" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout" />
+				<attr name="trimTopRows" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="layout" />
+				<attr name="zorder" renderer="PYStepper" defaultValue="original" enumerate="original,onfront,onbehind" group="layout" />
+			</BaseLayout>
+			<AS400Menu className="it.prodigyt.components.base.containers.AS400Menu" icon="ButtonIcon" category="deprecate"/>
+			<FlatDivideLayout className="it.prodigyt.components.base.containers.FlatDivideLayout" icon="ButtonIcon">
+				<attr name="constantStyle" renderer="FieldIO" defaultValue="default" enumerate="" group="style" subComponent="Constant"/>
+				<attr name="constantAlign" renderer="FieldIO" defaultValue="right" enumerate="left,right,top" group="layout"/>
+				<attr name="dividePosition" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="tablePosition" renderer="PYToggle" defaultValue="right" enumerate="right,left,bottom" group="layout"/>
+				<attr name="separatorColor" renderer="PYBoxColorChooser" defaultValue="16777215" enumerate="" group="style"/>
+				<attr name="separatorAlpha" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="separatorSize" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="wrapFields" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="maximumWrapWidth" renderer="PYToggle" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="groupFrames" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+			</FlatDivideLayout>
+			<VerticalSpacingLayout className="it.prodigyt.components.base.containers.VerticalSpacingLayout" icon="ButtonIcon">
+				<attr name="verticalProp" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="horizontalProp" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="animation" renderer="PYToggle" defaultValue="none" enumerate="none,vertical_from_center,from_component,from_right" group="other"/>
+			</VerticalSpacingLayout>
+			<Window className="it.prodigyt.components.base.containers.Window" icon="ButtonIcon">
+				<attr name="floating" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="clickOutsideFkey" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="anchor" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="style"/>
+				<attr name="anchorLineColor" renderer="PYBoxColorChooser" defaultValue="0" enumerate="" group="style"/>
+				<attr name="anchorLineSize" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="anchorLine" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="style"/>
+				<attr name="backShadow" renderer="PYToggle" defaultValue="NONE" enumerate="NONE,SOFT_LIGHT_BACK,SOFT_DARK_BACK,HARD_LIGHT_BACK,HARD_DARK_BACK" group="other"/>
+			</Window>
+			<ProjectBox className="it.prodigyt.panelcomposer.ProjectBox" icon="TextAreaIcon" category="deprecate">
+				<attr name="rootXml" renderer="" defaultValue="" enumerate="" group="other"/>
+			</ProjectBox>
+			<AttributeBox className="it.prodigyt.panelcomposer.AttributeBox" icon="TextAreaIcon" category="deprecate">
+				<attr name="attrData" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="copyDeleteAllowed" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+			</AttributeBox>
+			<ActionsContainer className="it.prodigyt.components.base.containers.ActionsContainer" icon="ButtonIcon" category="deprecate"/>
+			<PYVisualSession className="it.prodigyt.components.base.containers.PYVisualSession" icon="ButtonIcon">
+				<attr name="manageNavigationKeys" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="manageActionKeys" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="alphaOnASSUME" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+			</PYVisualSession>
+			<PfkeysContainer className="it.prodigyt.components.base.containers.PfkeysContainer" icon="LabelIcon" category="deprecate">
+				<attr name="showDock" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+			</PfkeysContainer>
+			<PYServiceContainer className="it.prodigyt.components.gui.as3.PYServiceContainer" icon="LabelIcon"/>
+		</CONTAINERS>
+		<CONTROLS sequence="7">
+			
+			<PYButton className="it.prodigyt.components.base.controls.PYButton" icon="LabelIcon" category="public">
+				<attr name="selectedStyle" renderer="FieldIO" defaultValue="false" enumerate="" group="style"/>
+				<attr name="normalStyle" renderer="FieldIO" defaultValue="false" enumerate="" group="style"/>
+				<attr name="overStyle" renderer="FieldIO" defaultValue="false" enumerate="" group="style"/>
+			</PYButton>
+			<PYLink className="it.prodigyt.components.base.text.PYLink" icon="LabelIcon" category="public">
+				<attr name="link" renderer="FieldIO" defaultValue="false" enumerate="" group="other"/>
+			</PYLink>
+			<PfkeyDesc className="it.prodigyt.engine.converter.PfkeyDesc" icon="LabelIcon" category="private">
+				<attr name="allFromKeyboard" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+			</PfkeyDesc>
+			<Map className="it.prodigyt.components.base.controls.PfkeyDesc" icon="LabelIcon" category="private">
+				<attr name="allFromKeyboard" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+			</Map>
+			<PYDraw className="it.prodigyt.components.gui.as3.PYDraw" icon="LabelIcon" category="deprecate"/>
+			<PYRubber className="it.prodigyt.components.gui.as3.PYRubber" icon="LabelIcon" category="deprecate">
+				<attr name="rubberColor" renderer="FieldIO" defaultValue="black" enumerate="black,white" group="other"/>
+				<attr name="value" renderer="PYToggle" defaultValue="0" enumerate="" group="other"/>
+				<attr name="minimum" renderer="PYToggle" defaultValue="0" enumerate="" group="other"/>
+				<attr name="maximum" renderer="PYToggle" defaultValue="0" enumerate="" group="other"/>
+			</PYRubber>
+			<PYScrollingBar className="it.prodigyt.components.gui.as3.PYScrollingBar" icon="LabelIcon"  category="deprecate">
+				<attr name="layout" renderer="FieldIO" defaultValue="vertical" enumerate="vertical,horizontal" group="layout"/>
+				<attr name="maxBoxDimension" renderer="PYToggle" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="alwaysVisible" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+			</PYScrollingBar>
+			<PYScrollingPage className="it.prodigyt.components.gui.as3.PYScrollingPage" icon="LabelIcon">
+				<attr name="adviseOnScroll" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="interactive" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+			</PYScrollingPage>
+			<PYScrollBar className="it.prodigyt.components.base.controls.PYScrollBar" icon="LabelIcon">
+				<attr name="arrowColor" renderer="PYBoxColorChooser" defaultValue="0xFFFFFF" enumerate="" group="style" />
+				<attr name="dimension" renderer="PYStepper" defaultValue="12" enumerate="" group="layout"/>
+				<attr name="interactive" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="pressedStyle" renderer="PYToggle" defaultValue="" enumerate="" group="style"/>
+			</PYScrollBar>
+			<ActionButton className="it.prodigyt.components.gui.as3.ActionButton" icon="LabelIcon" category="deprecate">
+				<attr name="butLabel" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</ActionButton>
+			<PYSearch className="it.prodigyt.components.gui.as3.PYSearch" icon="LabelIcon" category="deprecate"/>
+			<DateCalendar className="it.prodigyt.components.gui.as3.DateCalendar" icon="LabelIcon">
+				<attr name="stringDate" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</DateCalendar>
+			<PYPushButton className="it.prodigyt.components.gui.as3.PYPushButton" icon="LabelIcon" category="private">
+				<attr name="align" renderer="FieldIO" defaultValue="left" enumerate="left,center,right" group="layout"/>
+				<attr name="label" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="selected" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="toggle" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="labelPosition" renderer="FieldIO" defaultValue="bottom" enumerate="top,bottom,center,left,right" group="other"/>
+				<attr name="labelWidth" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="arrowType" renderer="FieldIO" defaultValue="none" enumerate="none,right" group="other"/>
+			</PYPushButton>
+			<PYDockButton className="it.prodigyt.components.gui.as3.PYDockButton" icon="LabelIcon" category="private">
+				<attr name="magnifier" renderer="PYStepper" defaultValue="1.5" enumerate="" group="layout"/>
+				<attr name="reflActive" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="dockActive" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+			</PYDockButton>
+			<PYAlert className="it.prodigyt.components.gui.as3.PYAlert" icon="LabelIcon">
+				<attr name="spacing" renderer="FieldIO" defaultValue="" enumerate="" group="style" />
+				<attr name="style" renderer="FieldIO" defaultValue="" enumerate="" group="style"/> 
+				<attr name="boxStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="buttonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="buttonOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="buttonSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="buttonsBoxStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYNbox"/>
+				<attr name="messageStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="titleStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+			</PYAlert>
+			<PYColorChooser className="it.prodigyt.components.gui.as3.PYColorChooser" icon="LabelIcon"/>
+			
+			<PYlabelIcon className="it.prodigyt.components.gui.as3.PYlabelIcon" icon="LabelIcon">
+				<attr name="proportional" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="MaxHeight" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="MaxWidth" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="layout" renderer="FieldIO" defaultValue="left" enumerate="left,center,right,top,bottom" group="layout"/>
+				<attr name="spacer" renderer="PYStepper" defaultValue="5" enumerate="" group="layout"/>
+				<attr name="text" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="iconSource" renderer="FieldIO" defaultValue="" enumerate="" group="layout"/>
+				<attr name="iconAlign" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="labelStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="iconStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+			</PYlabelIcon>
+			<PYObject className="it.prodigyt.components.gui.as3.PYObject" icon="LabelIcon" category="private"/>
+			<PYSlider className="it.prodigyt.components.gui.as3.PYSlider" icon="TextAreaIcon">
+				<attr name="value" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="minimum" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="maximum" renderer="PYStepper" defaultValue="100" enumerate="" group="layout"/>
+			</PYSlider>
+			<SimpleButton className="it.prodigyt.components.gui.as3.SimpleButton" icon="ButtonIcon" category="private">
+				<attr name="butLabel" renderer="FieldIO" defaultValue="null" enumerate="" group="text"/>
+			</SimpleButton>
+			<CoverFlow className="it.prodigyt.components.core.threeD.CoverFlow" icon="LabelIcon" category="deprecate">
+				<attr name="zoom" renderer="PYStepper" defaultValue="" enumerate="" group="layout"/>
+				<attr name="focus" renderer="PYStepper" defaultValue="" enumerate="" group="layout"/>
+				<attr name="z" renderer="PYStepper" defaultValue="" enumerate="" group="layout"/>
+				<attr name="selectedIndex" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+				<attr name="selectedItem" renderer="PYStepper" defaultValue="" enumerate="" group="other"/>
+				<attr name="angle" renderer="PYStepper" defaultValue="55" enumerate="" group="other"/>
+				<attr name="selectedItemWidth" renderer="PYStepper" defaultValue="100" enumerate="" group="other"/>
+				<attr name="flippoint" renderer="PYStepper" defaultValue="200" enumerate="" group="other"/>
+				<attr name="gap" renderer="PYStepper" defaultValue="60" group="other"/>
+				<attr name="cameraOffsetX" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+				<attr name="cameraOffsetY" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+				<attr name="layout" renderer="FieldIO" defaultValue="horizontal" enumerate="horizontal,vertical" group="other"/>
+				<attr name="scrollCover" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+			</CoverFlow>
+			<CoverFlowDataProvider className="it.prodigyt.components.core.threeD.CoverFlow" icon="LabelIcon" category="deprecate">
+				<attr name="firstDpIndex" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+			</CoverFlowDataProvider>
+			<CoverFlowExtRenderer className="it.prodigyt.components.core.threeD.CoverFlowExtRenderer" icon="LabelIcon" category="deprecate"/>
+			<SPOOLService className="it.prodigyt.components.gui.as3.SPOOLService" icon="LabelIcon" category="deprecate">
+				<attr name="returnPFKey" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</SPOOLService>
+			<PYColorChooserBasic className="it.prodigyt.components.gui.as3.PYColorChooserBasic" icon="LabelIcon" category="private"/>
+			<PYBoxColorChooser className="it.prodigyt.components.gui.as3.PYBoxColorChooser" icon="LabelIcon"/>
+		</CONTROLS>
+		<DESKTOPS sequence="5">
+			<BaseDesktop className="it.prodigyt.components.gui.as3.desktops.BaseDesktop" icon="ButtonIcon">
+				<attr name="shellProgram" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="title" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="orientation" renderer="FieldIO" defaultValue="portrait" enumerate="portrait,landscape,any" group="layout"/>
+				<attr name="allowOrientation" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="destinationClient" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="menu" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="commandLine" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="navigation" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="actions" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="baseSession" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="xmlMenuPath" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="fullScreen" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="maximized" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="AS400MsgPollingSecs" renderer="PYToggle" defaultValue="1" enumerate="" group="other"/>
+				<attr name="spoolClass" renderer="FieldIO" defaultValue="PYSPOOLService" enumerate="PYSPOOLService,PYSPOOLServiceV2" group="other"/>
+			</BaseDesktop>
+			<ResponsiveDesktop className="it.prodigyt.components.gui.as3.desktops.ResponsiveDesktop" icon="ButtonIcon">
+				<attr name="shellProgram" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="title" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="orientation" renderer="FieldIO" defaultValue="portrait" enumerate="portrait,landscape,any" group="layout"/>
+				<attr name="destinationClient" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="menu" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="commandLine" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="navigation" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="actions" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="baseSession" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="xmlMenuPath" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="fullScreen" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="maximized" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="AS400MsgPollingSecs" renderer="PYToggle" defaultValue="1" enumerate="" group="other"/>
+			</ResponsiveDesktop>
+			<AS400Desktop className="it.prodigyt.components.gui.as3.desktops.AS400Desktop" icon="ButtonIcon" category="deprecate"/>
+			<AlphaDesktop className="it.prodigyt.components.gui.as3.desktops.AlphaDesktop" icon="ButtonIcon" />
+			<FlowDesktop className="it.prodigyt.components.gui.as3.desktops.FlowDesktop" icon="ButtonIcon" category="deprecate"/>
+			<DesktopScrollable className="it.prodigyt.components.gui.as3.desktops.DesktopScrollable" icon="ButtonIcon" category="deprecate"/>
+			<ElelcoDesktop className="it.prodigyt.components.gui.as3.desktops.ElelcoDesktop" icon="ButtonIcon"/>
+			<EDPDesktop className="it.prodigyt.components.gui.as3.desktops.EDPDesktop" icon="ButtonIcon">
+				<attr name="alphaAnimation" renderer="PYStepper" defaultValue="false" enumerate="false,true" group="other"/>
+			</EDPDesktop>
+			<ExtendDesktop className="it.prodigyt.components.gui.as3.desktops.ExtendDesktop" icon="ButtonIcon">
+				<attr name="alphaAnimation" renderer="PYStepper" defaultValue="false" enumerate="false,true" group="other"/>
+			</ExtendDesktop>
+			<CGDesktop className="it.prodigyt.components.gui.as3.desktops.CGDesktop" icon="ButtonIcon" category="deprecate">
+				<attr name="alphaAnimation" renderer="PYStepper" defaultValue="false" enumerate="false,true" group="other"/>
+			</CGDesktop>
+			<GLDesktop className="it.prodigyt.components.gui.as3.desktops.GLDesktop" icon="ButtonIcon" category="deprecate">
+				<attr name="alphaAnimation" renderer="PYStepper" defaultValue="false" enumerate="false,true" group="other"/>
+			</GLDesktop>
+		</DESKTOPS>
+		<MENUS sequence="5">
+			<CircleMenuContainer className="it.prodigyt.components.gui.as3.circles.CircleMenuContainer" icon="ButtonIcon">
+			</CircleMenuContainer>	
+			<FlowContainer className="it.prodigyt.components.base.menus.FlowContainer" icon="ButtonIcon">
+				<attr name="globalCenter" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="includeArea" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="layout" renderer="PYToggle" defaultValue="horizontal" enumerate="horizontal,vertical,vertical_horizontal" group="layout"/>
+				<attr name="hGap" renderer="PYStepper" defaultValue="15" enumerate="" group="layout"/>
+				<attr name="popAreaStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FlowContainerItem"/>
+				<attr name="popAreaItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaSubMenuStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaTitleStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="flowCenter" renderer="FieldIO" defaultValue="flow_on_item" enumerate="flow_centered,flow_on_item,flow_full" group="layout"/>
+				<attr name="keyboardEnabled" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="allowMove" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="labelLength" renderer="PYStepper" defaultValue="autosize" enumerate="autosize,full,free" group="other"/>
+				<attr name="search" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="zoom" renderer="PYStepper" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="searchStyle" renderer="PYStepper" defaultValue="default" enumerate="" group="other" subComponent="FieldIOExtPop"/>
+			</FlowContainer>
+			
+			<FlowTabletContainer className="it.prodigyt.components.base.menus.FlowTabletContainer" icon="ButtonIcon">
+				<attr name="globalCenter" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="includeArea" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="layout" renderer="PYToggle" defaultValue="horizontal" enumerate="horizontal,vertical,vertical_horizontal" group="layout"/>
+				<attr name="hGap" renderer="PYStepper" defaultValue="15" enumerate="" group="layout"/>
+				<attr name="popAreaStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FlowContainerItem"/>
+				<attr name="popAreaItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaSubMenuStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaTitleStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="flowCenter" renderer="FieldIO" defaultValue="flow_on_item" enumerate="flow_centered,flow_on_item,flow_full" group="layout"/>
+				<attr name="keyboardEnabled" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="allowMove" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="labelLength" renderer="PYStepper" defaultValue="autosize" enumerate="autosize,full,free" group="other"/>
+				<attr name="search" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="zoom" renderer="PYStepper" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="searchStyle" renderer="PYStepper" defaultValue="default" enumerate="" group="other" subComponent="FieldIOExtPop"/>
+				<attr name="gridColumns" renderer="PYStepper" defaultValue="1" enumerate="" group="other" />
+				<attr name="gridRows" renderer="PYStepper" defaultValue="1" enumerate="" group="other" />
+			</FlowTabletContainer>
+			<FlowContainerV1 className="it.prodigyt.components.base.menus.FlowContainerV1" icon="ButtonIcon">
+				<attr name="globalCenter" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="includeArea" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="layout"/>
+				<attr name="layout" renderer="PYToggle" defaultValue="horizontal" enumerate="horizontal,vertical,vertical_horizontal" group="layout"/>
+				<attr name="hGap" renderer="PYStepper" defaultValue="15" enumerate="" group="layout"/>
+				<attr name="popAreaStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FlowContainerItem"/>
+				<attr name="popAreaItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaSubMenuStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="popAreaTitleStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabelImage"/>
+				<attr name="flowCenter" renderer="FieldIO" defaultValue="flow_on_item" enumerate="flow_centered,flow_on_item,flow_full" group="layout"/>
+				<attr name="keyboardEnabled" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="allowMove" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="labelLength" renderer="PYStepper" defaultValue="autosize" enumerate="autosize,full,free" group="other"/>
+				<attr name="search" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="zoom" renderer="PYStepper" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="searchStyle" renderer="PYStepper" defaultValue="default" enumerate="" group="other" subComponent="FieldIOExtPop"/>
+			</FlowContainerV1>
+			<FlowContainerItem className="it.prodigyt.components.base.menus.FlowContainerItem" icon="ButtonIcon">
+				<attr name="anchorLineColor" renderer="PYBoxColorChooser" defaultValue="0" enumerate="" group="style"/>
+				<attr name="anchorLineSize" renderer="PYStepper" defaultValue="1" enumerate="" group="style"/>
+				<attr name="anchorLine" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="style"/>
+				<attr name="anchorLineCircleRadius" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+			</FlowContainerItem>
+			<FlowContainerPC className="it.prodigyt.components.base.menus.FlowContainerPC" icon="ButtonIcon" category="deprecate"/>
+			<TreeItem className="it.prodigyt.components.base.menus.TreeItem" icon="LabelIcon">
+				<attr name="opened" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="data" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</TreeItem>
+			<TreeContainer className="it.prodigyt.components.base.menus.TreeContainer" icon="LabelIcon"/>
+		</MENUS>
+		<TABLES sequence="4">
+			<BaseHeaderV2 className="it.prodigyt.components.base.tables.BaseHeaderV2" icon="ButtonIcon">
+				<attr name="hGap" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+				<attr name="rowHeight" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="initialRowSetting" renderer="FieldIO" defaultValue="singleRow" enumerate="singleRow,multiRow" group="layout"/>
+				<attr name="filterStyle" renderer="FieldIO" defaultValue="default" enumerate="default" group="other"/>
+				<attr name="labelStyle" renderer="FieldIO" defaultValue="default" enumerate="default" group="other" subComponent="Constant"/>
+				<attr name="modifiable" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="sortable" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="manualSet" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="columnAlign" renderer="PYToggle" defaultValue="auto" enumerate="auto,manual,row_restricted" group="other"/>
+				<attr name="generateColumnLabel" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+			</BaseHeaderV2>
+			<BaseColumnV2 className="it.prodigyt.components.base.tables.BaseColumnV2" icon="ButtonIcon">
+				<attr name="col" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="isSelector" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="row" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="columnAlign" renderer="FieldIO" defaultValue="" enumerate="left,center,right" group="layout"/>
+				<attr name="labelAlign" renderer="FieldIO" defaultValue="" enumerate="left,center,right,auto" group="layout"/>
+				<attr name="tempText" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="cellStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style"  subComponent="FieldO"/>
+				<attr name="filterStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FieldIO"/>
+				<attr name="headerStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="Constant"/>
+				<attr name="headerColumnStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="Constant"/>
+				<attr name="levelStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="sortedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="arrowColor" renderer="PYBoxColorChooser" defaultValue="0x000000" enumerate="" group="other" />
+				<attr name="sort" rendererF="FieldIO" defaultValue="none" enumerate="asc,desc,none" group="other"/>
+				<attr name="formula" renderer="FieldIO" defaultValue="none" enumerate="sum,count,perc,average,none" group="other"/>
+				<attr name="hide" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="selectorValues" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="manualWidth" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</BaseColumnV2>
+			<BaseTableV2 className="it.prodigyt.components.base.tables.BaseTableV2" icon="ButtonIcon">
+				<attr name="pageCompletion" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="adviseOnScroll" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="verticalScrollBar" renderer="FieldIO" defaultValue="none" enumerate="none,proximity,visible,on_touch" group="layout"/>
+				<attr name="horizontalScrollBar" renderer="FieldIO" defaultValue="none" enumerate="none,proximity,visible,on_touch" group="layout"/>
+				<attr name="scrollBarAlwaysShown" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="colSpacing" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="hPadding" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+				<attr name="optionsItems" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="optionSelect" renderer="" defaultValue="first" enumerate="first,first_non_blank" group="other"/>
+				<attr name="rowSpacing" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="fitBottom" renderer="PYStepper" defaultValue="false" enumerate="true,false,original" group="layout"/>
+				<attr name="optionsValues" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="compressColumns" renderer="" defaultValue="false" enumerate="true,false" group="layout"/>
+				<attr name="inputCellStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FieldIO"/>
+				<attr name="outputCellStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FieldO"/>
+				<attr name="headerStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="BaseHeaderV2"/>
+				<attr name="headerColumnStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="BaseColumnV2"/>
+				<attr name="popAreaStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FlowContainerItem"/>
+				<attr name="popAreaItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="popAreaOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="popAreaSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="rowStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="SflRow"/>
+				<attr name="rowEvenStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="SflRow"/>
+				<attr name="rowOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="SflRow"/>
+				<attr name="rowSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="SflRow"/>
+				<attr name="rowTotalStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="SflRow"/>
+				<attr name="controlButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="BaseColumnV2"/>
+				<attr name="initialRowSetting" renderer="FieldIO" defaultValue="singleRow" enumerate="singleRow,multiRow" group="layout"/>
+				<attr name="modifiable" renderer="" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="layout" renderer="FieldIO" defaultValue="free" enumerate="vertical,horizontal,tile,free" group="layout"/>
+				<attr name="searchJollyChar" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="searchTextColor" renderer="PYBoxColorChooser" defaultValue="" enumerate="" group="other"/>
+				<attr name="fastRender" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="sortable" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="paddingBottom" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="paddingLeft" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="useSelectorVALUES" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="hideSelector" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="popupPosition" renderer="PYToggle" defaultValue="centerdown" enumerate="centerdown,rowbottom,right" group="other"/>
+				<attr name="repositionFromServer" renderer="PYToggle" defaultValue="false" enumerate="false,true" group="other"/>
+				<attr name="fillTable" renderer="PYToggle" defaultValue="false" enumerate="false,true" group="other"/>
+				<attr name="fillForExport" renderer="PYToggle" defaultValue="false" enumerate="false,true" group="other"/>
+				<attr name="optionFkey" renderer="PYToggle" defaultValue="Enter" enumerate="Enter,F01,F02,F03,F04,F05,F06,F07,F08,F09,F10,F11,F12,F13,F14,F15,F16,F17,F18,F19,F20,F21,F22,F23,F24" group="other"/>
+				<attr name="keyboardSelectable" renderer="PYToggle" defaultValue="true" enumerate="false,true" group="other"/>
+				<attr name="onlyFirstLine" renderer="PYToggle" defaultValue="true" enumerate="false,true" group="other"/>
+				<attr name="hideHeader" renderer="PYToggle" defaultValue="true" enumerate="false,true" group="other"/>
+				<attr name="singlePage" renderer="PYToggle" defaultValue="false" enumerate="false,true" group="other"/>
+				<attr name="scrollbardimension" renderer="PYStepper" defaultValue="20" enumerate="" group="layout"/>
+				<attr name="headersEnable" renderer="PYStepper" defaultValue="false" enumerate="false,true" group="other"/>
+				<attr name="useSeparateData" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="showLoading" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="optimizeColumnWidths" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="showFilters" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="onlySubTotals" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="chart" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other" />
+				<attr name="chartStyle" renderer="FieldIO" defaultValue="" enumerate="" group="other" subComponent="PYChart"/>
+				<attr name="chartValues" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="chartLabels" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="chartLegend" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="chartPosition" renderer="PYToggle" defaultValue="overlay" enumerate="overlay,right,left,bottom,top" group="other"/>
+				<attr name="chartDimension" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="showRows" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="userSaveEnabled" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="optimizeRecycleRows" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="optimizeRenderRows" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="optimizeScrollRows" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="singleClickOnSingleOption" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other" />
+			</BaseTableV2>
+			<BaseTableMap className="it.prodigyt.components.base.tables.BaseTableMap" icon="ButtonIcon">
+				<attr name="mapImage" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="mapElement" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</BaseTableMap>
+			<BaseTableMapQuest className="it.prodigyt.components.base.tables.BaseTableMapQuest" icon="ButtonIcon"  category="deprecate">
+				<attr name="mapImage" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="mapElement" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</BaseTableMapQuest>
+			<BaseTableAlberto className="it.prodigyt.components.base.tables.BaseTableAlberto" icon="ButtonIcon" category="deprecate"/>
+			<PYChart className="it.prodigyt.components.charts.PYChart" icon="TextAreaIcon" category="public">
+				<attr name="chartType" renderer="FieldIO" defaultValue="bar" enumerate="bar,hbar,bar_stack,line,pie,area,scatter_line,tags" group="other"/>
+				<attr name="title" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="values" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="textColor" renderer="PYBoxColorChooser" defaultValue="" enumerate="" group="style"/>
+				<attr name="labels" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="legend" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="gridColor" renderer="PYBoxColorChooser" defaultValue="" enumerate="" group="style"/>
+				<attr name="seriesColors" renderer="" defaultValue="" enumerate="" group="style"/>
+			</PYChart>
+		</TABLES>
+		<TEXT sequence="2">
+			<FieldO className="it.prodigyt.components.base.text.FieldO" icon="LabelIcon">
+				<attr name="editWord" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="capitalize" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="forceNumeric" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="selectable" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+			</FieldO>
+			<FieldOCommand className="it.prodigyt.components.base.text.FieldOCommand" icon="LabelIcon">
+				<attr name="string" renderer="FieldIO" defaultValue="" enumerate="" group="other"  />
+			</FieldOCommand>
+			<FieldOPercentage className="it.prodigyt.components.base.text.FieldOPercentage" icon="LabelIcon">
+				<attr name="sectorLowStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYSector"/>
+				<attr name="sectorHighStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYSector"/>
+				<attr name="sectorNegStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYSector"/>
+				<attr name="radiusInt" renderer="PYToggle" defaultValue="false" enumerate="" group="style"/>
+				<attr name="radiusExt" renderer="PYToggle" defaultValue="false" enumerate="" group="style"/>
+				<attr name="sectorRotation" renderer="PYToggle" defaultValue="false" enumerate="" group="style"/>
+				<attr name="sectorThickness" renderer="PYToggle" defaultValue="false" enumerate="" group="style"/>
+				<attr name="showText" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="text"/>
+			</FieldOPercentage>
+			<FieldOCursor className="it.prodigyt.components.base.text.FieldOCursor" icon="LabelIcon"/>
+			<FieldOImage className="it.prodigyt.components.base.controls.FieldOImage" icon="LabelIcon">
+				<attr name="address" renderer="FieldIO" defaultValue="" enumerate="" group="other" />
+				<attr name="expandOnClick" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="extension" renderer="FieldIO" defaultValue="" enumerate=".jpg,.png" group="other" />
+			</FieldOImage>
+			<FieldOMultiLink className="it.prodigyt.components.base.text.FieldOMultiLink" icon="LabelIcon">
+				<attr name="linkStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLink" />
+				<attr name="numIcons" renderer="FieldIO" defaultValue="" enumerate="" group="other"  />
+				<attr name="iconsWidth" renderer="FieldIO" defaultValue="16" enumerate="" group="layout"  />
+				<attr name="iconsHeight" renderer="FieldIO" defaultValue="16" enumerate="" group="layout"  />
+			</FieldOMultiLink>
+			<FieldOLink className="it.prodigyt.components.base.text.FieldOLink" icon="LabelIcon">
+				<attr name="string" renderer="FieldIO" defaultValue="" enumerate="" group="other"  />
+				<attr name="uriScheme" renderer="FieldIO" defaultValue="" enumerate="file:,http:,https:,ifs:,mailto:,maps:,sms:,tel:" group="other"  />
+			</FieldOLink>
+			<Constant className="it.prodigyt.components.base.text.Constant" icon="LabelIcon">
+				<attr name="cond" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</Constant>
+			<ConstantFrame className="it.prodigyt.components.base.text.ConstantFrame" icon="LabelIcon">
+				<attr name="computeHeight" renderer="FieldIO" defaultValue="" enumerate="true,false" group="other"/>
+				<attr name="computeWidth" renderer="FieldIO" defaultValue="" enumerate="true,false" group="other"/>
+			</ConstantFrame>
+			<PYProgress className="it.prodigyt.components.gui.as3.PYProgress" icon="LabelIcon" category="private">
+				<attr name="barStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="barNegativeStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="maxVal" renderer="PYStepper" defaultValue="100" enumerate="" group="other"/>
+				<attr name="minVal" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+				<attr name="showText" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="text"/>
+				<attr name="margin" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+				<attr name="layout" renderer="FieldIO" defaultValue="horizontal" enumerate="horizontal,vertical" group="layout"/>
+				<attr name="step" renderer="PYStepper" defaultValue="10" enumerate="" group="other"/>
+				<attr name="startValue" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+				<attr name="endValue" renderer="PYStepper" defaultValue="-1" enumerate="" group="other"/>
+				<attr name="drawStep" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="stepColor" renderer="PYBoxColorChooser" defaultValue="0x000000" enumerate="" group="other"/>
+			</PYProgress>
+			<PYProgressV2 className="it.prodigyt.components.gui.as3.PYProgress" icon="LabelIcon" category="private">
+				<attr name="barStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="barNegativeStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="barAlign" renderer="FieldIO" defaultValue="left" enumerate="left,right" group="layout"/>
+				<attr name="barMargin" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+<!--
+				<attr name="barMarginBottom" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+				<attr name="barMarginLeft" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+				<attr name="barMarginRight" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+				<attr name="barMarginTop" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+-->
+				<attr name="barPosition" renderer="FieldIO" defaultValue="before" enumerate="after,after-attached,before,before-attached,underlaid" group="layout"/>
+				<attr name="maxVal" renderer="PYStepper" defaultValue="100" enumerate="" group="other"/>
+				<attr name="minVal" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+				<attr name="showText" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="text"/>
+				<attr name="margin" renderer="PYStepper" defaultValue="2" enumerate="" group="layout"/>
+				<attr name="layout" renderer="FieldIO" defaultValue="horizontal" enumerate="horizontal,vertical" group="layout"/>
+				<attr name="step" renderer="PYStepper" defaultValue="10" enumerate="" group="other"/>
+				<attr name="startValue" renderer="PYStepper" defaultValue="0" enumerate="" group="other"/>
+				<attr name="endValue" renderer="PYStepper" defaultValue="-1" enumerate="" group="other"/>
+				<attr name="drawStep" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="stepColor" renderer="PYBoxColorChooser" defaultValue="0x000000" enumerate="" group="other"/>
+			</PYProgressV2>
+			<PYAxisLabel className="it.prodigyt.components.gui.as3.PYAxisLabel" icon="LabelIcon" category="deprecate">
+				<attr name="labelStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="dummyWidth" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="lead" renderer="PYStepper" defaultValue="0" enumerate="" group="style"/>
+				<attr name="leadStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+			</PYAxisLabel>
+			<FieldOProgress className="it.prodigyt.components.base.text.FieldOProgress" icon="TextAreaIcon">
+				<attr name="editWord" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="cond" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</FieldOProgress>
+			<FieldOProgressV2 className="it.prodigyt.components.base.text.FieldOProgressV2" icon="TextAreaIcon">
+				<attr name="editWord" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="cond" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</FieldOProgressV2>
+			<FieldODateProgress className="it.prodigyt.components.gui.as3.FieldODateProgress" icon="TextAreaIcon" category="deprecate">
+				<attr name="stepDate" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="endDate" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="startDate" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minDate" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="maxDate" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</FieldODateProgress>
+		</TEXT>
+		<TEXTINPUT sequence="3">
+			<FieldIO className="it.prodigyt.components.base.inputs.FieldIO" icon="TextAreaIcon">
+				<attr name="dup" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="rightAdjustZero" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="autoAdvance" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="rightAdjustBlank" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="editWord" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="restrictToNumeric" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="restrictToUpperCase" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="selectOnFocus" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="text"/>
+				<attr name="focusMagnifier" renderer="PYToggle" defaultValue="1" enumerate="" group="other"/>
+				<attr name="forceNumeric" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="text"/>
+				<attr name="label" renderer="PYToggle" defaultValue="" enumerate="" group="other"/>
+				<attr name="labelStyle" renderer="PYToggle" defaultValue="" enumerate="" group="other" subComponent="PYLabel"/>
+				<attr name="labelPosition" renderer="PYToggle" defaultValue="inner" enumerate="inner,left,right" group="other"/>
+				<attr name="enterOnSoftKeyboard" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+			</FieldIO>
+			<FieldIODate className="it.prodigyt.components.base.inputs.FieldIODate" icon="TextAreaIcon">
+				<attr name="dateSeparator" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="finalYear" renderer="FieldIO" defaultValue="" enumerate="" group="text" />
+				<attr name="initialYear" renderer="FieldIO" defaultValue="" enumerate="" group="text" />
+				<attr name="popAreaHolidayItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel" />
+				<attr name="scrollDays" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="useNativeSoftKeyboard" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+			</FieldIODate>
+			<FieldIOExtPop className="it.prodigyt.components.base.inputs.FieldIOExtPop" icon="TextAreaIcon">
+				<attr name="iconStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FieldIOExtPopIcon"/>
+				<attr name="returnValue" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="as400FKey" renderer="FieldIO" defaultValue="" enumerate=" ,Enter,F01,F02,F03,F04,F05,F06,F07,F08,F09,F10,F11,F12,F13,F14,F15,F16,F17,F18,F19,F20,F21,F22,F23,F24" group="other"/>
+				<attr name="cacheName" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="buttonVisible" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="buttonPosition" renderer="PYToggle" defaultValue="internal" enumerate="internal,external" group="other"/>
+				<attr name="buttonDistance" renderer="PYToggle" defaultValue="1" enumerate="" group="other"/>
+				<attr name="clickableWhenDisabled" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="doubleClickable" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="protect" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="iconFactory" renderer="PYToggle" defaultValue="FieldIOExtPopIcon" enumerate="FieldIOExtPopIcon,FieldIOExtPopIconV2" group="style"/>
+			</FieldIOExtPop>
+			<FieldIOBarcode className="it.prodigyt.components.base.inputs.FieldIOBarcode" icon="TextAreaIcon">
+				<attr name="barcodeType" renderer="FieldIO" defaultValue="ALL" enumerate="ALL,AZTEC,CODE128,CODE39,DATAMATRIX,EAN13,EAN8,ITF14,PDF417,QR,UPCE" group="other" />
+			</FieldIOBarcode>		
+			<FieldIOStep className="it.prodigyt.components.base.inputs.FieldIOStep" icon="TextAreaIcon">
+				<attr name="stepUnit" renderer="FieldIO" defaultValue="5" enumerate="" group="other"/>
+				<attr name="stepValue" renderer="FieldIO" defaultValue="1" enumerate="" group="other"/>
+			</FieldIOStep>
+			<FieldIOExtPopIcon className="it.prodigyt.components.base.inputs.FieldIOExtPopIcon" icon="TextAreaIcon"/>
+			<FieldIOExtPopIconV2 className="it.prodigyt.components.base.inputs.FieldIOExtPopIcon" icon="TextAreaIcon"/>
+			<FieldIODecodePop className="it.prodigyt.components.gui.as3.FieldIODecodePop" icon="TextAreaIcon" category="deprecate">
+				<attr name="decodeStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="decodeText" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</FieldIODecodePop>
+			<FieldIONumeric className="it.prodigyt.components.base.inputs.FieldIONumeric" icon="TextAreaIcon">
+				<attr name="immediatePop" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="style"/>
+<!--
+				<attr name="listStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="listItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="listOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="listSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+
+				<attr name="popAreaStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="popAreaItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="popAreaOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="popAreaSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+-->
+ 			</FieldIONumeric>
+<!--
+			<FieldIONumericV1 className="it.prodigyt.components.gui.as3.FieldIONumericV1" icon="TextAreaIcon">
+				<attr name="immediatePop" renderer="PYToggle" defaultValue="true" enumerate="true,false" group="style"/>
+				<attr name="listStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="listItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="listOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="listSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="popAreaStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="popAreaItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="popAreaOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="popAreaSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+			</FieldIONumericV1>
+-->
+			<FieldIOGesture className="it.prodigyt.components.gui.as3.FieldIOGesture" icon="TextAreaIcon">
+				<attr name="cacheName" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</FieldIOGesture>
+			<FieldIOMasked className="it.prodigyt.components.base.inputs.FieldIOMasked" icon="TextAreaIcon" category="deprecate">
+				<attr name="defaultCharacter" renderer="FieldIO" defaultValue="_" enumerate="" group="text"/>
+				<attr name="required" renderer="PYToggle" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="inputMask" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="cellItemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+			</FieldIOMasked>
+			<FieldIOPop className="it.prodigyt.components.base.inputs.FieldIOPop" icon="TextAreaIcon">
+				<attr name="popAreaStyle" renderer="" defaultValue="" enumerate="" group="style" subComponent="FlowContainerItem"/>
+				<attr name="popAreaItemStyle" renderer="" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="popAreaOverStyle" renderer="" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="popAreaSelectedStyle" renderer="" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="popAction" renderer="PYToggle" defaultValue="immediate" enumerate="always_opened,immediate,deferred,none" group="other"/>
+				<attr name="popLayout" renderer="FieldIO" defaultValue="vertical" enumerate="vertical,horizontal" group="layout"/>
+				<attr name="popDistance" renderer="FieldIO" defaultValue="" enumerate="" group="layout"/>
+				<attr name="values" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="items" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="itemsFkeys" renderer="" defaultValue="" enumerate="" group="other"/>
+			</FieldIOPop>
+			<FIeldIOPopNoInput className="it.prodigyt.components.base.inputs.FIeldIOPopNoInput" icon="TextAreaIcon">
+				<attr name="popPosition" renderer="" defaultValue="center" enumerate="center,bottom,right" group="other"/>
+				<attr name="autoWidth" renderer="" defaultValue="true" enumerate="true,false" group="other"/>
+			</FIeldIOPopNoInput>
+			<FieldIOCompany className="it.prodigyt.components.base.inputs.FieldIOCompany" icon="TextAreaIcon">
+				<attr name="itemColorIndex" renderer="" defaultValue="" enumerate="" group="other"/>
+				<attr name="itemColors" renderer="" defaultValue="" enumerate="" group="other"/>
+			</FieldIOCompany>
+			<FieldIOExpanded className="it.prodigyt.components.gui.as3.FieldIOExpanded" icon="TextAreaIcon" category="deprecate">
+				<attr name="maxHeight" renderer="PYStepper" defaultValue="100" enumerate="" group="layout"/>
+				<attr name="maxWidth" renderer="PYStepper" defaultValue="100" enumerate="" group="layout"/>
+			</FieldIOExpanded>
+			<FieldIOToggle className="it.prodigyt.components.gui.as3.FieldIOToggle" icon="TextAreaIcon">
+				<attr name="onText" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="offText" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="onStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+				<attr name="offStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYComponent"/>
+			</FieldIOToggle>
+			<FieldIOTouch className="it.prodigyt.components.gui.as3.FieldIOTouch" icon="TextAreaIcon" category="deprecate">
+				<attr name="enterDirection" renderer="FieldIO" defaultValue="bottom" enumerate="top,bottom,left,right" group="other"/>
+				<attr name="popStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="VirtualKb"/>
+				<attr name="itemStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYNBoxSelectable"/>
+				<attr name="itemOverStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYNBoxSelectable"/>
+				<attr name="itemSelectedStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYNBoxSelectable"/>
+				<attr name="buttonHeight" renderer="PYStepper" defaultValue="" enumerate="" group="style"/>
+				<attr name="buttonWidth" renderer="PYStepper" defaultValue="" enumerate="" group="style"/>
+				<attr name="useNativeSoftKeyboard" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="style"/>
+			</FieldIOTouch>
+<!-- 
+ 			<FieldIOBarCode className="it.prodigyt.components.extra.inputs.FieldIOBarCode" icon="TextAreaIcon" category="deprecate"/>
+-->
+			<FieldIODateTouch className="it.prodigyt.components.gui.as3.FieldIODateTouch" icon="TextAreaIcon" category="deprecate">
+				<attr name="dateSeparator" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</FieldIODateTouch>
+<!--
+			<FieldIOUploader className="it.prodigyt.components.base.inputs.FieldIOUploader" icon="TextAreaIcon">
+				<attr name="fileTypes" renderer="FieldIO" defaultValue="" enumerate="" group="other"  />
+				<attr name="fileTypesDescription" renderer="FieldIO" defaultValue="" enumerate="" group="other"  />
+				<attr name="progressBarStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style"  />
+				<attr name="string" renderer="FieldIO" defaultValue="" enumerate="" group="other"  />			
+			</FieldIOUploader>
+-->
+			<PYConfigInfo className="it.prodigyt.components.gui.as3.PYConfigInfo" icon="TextAreaIcon"/>
+		</TEXTINPUT>
+		<WIDGETS sequence="6">
+			<AnalogClock className="it.prodigyt.components.gui.as3.clock.analog.AnalogClock" icon="LabelIcon"/>
+			<CenterMessage className="it.prodigyt.components.gui.as3.CenterMessage" icon="TextAreaIcon">
+				<attr name="maxHeight" renderer="PYStepper" defaultValue="" enumerate="" group="layout"/>
+			</CenterMessage>
+			<Clock className="it.prodigyt.components.gui.as3.clock.Clock" icon="ButtonIcon"/>
+			<Cursor className="it.prodigyt.components.gui.as3.Cursor" icon="LabelIcon">
+				<attr name="col" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+				<attr name="row" renderer="PYStepper" defaultValue="0" enumerate="" group="layout"/>
+			</Cursor>
+			<DigitalClock className="it.prodigyt.components.gui.as3.clock.digital.DigitalClock" icon="LabelIcon">
+				<attr name="gap" renderer="PYStepper" defaultValue="10" enumerate="" group="layout"/>
+				<attr name="margin" renderer="PYStepper" defaultValue="5" enumerate="" group="layout"/>
+				<attr name="hourStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+				<attr name="dateStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel"/>
+			</DigitalClock>
+			<GLSPOOLService className="it.prodigyt.components.gui.as3.GLSPOOLService" icon="LabelIcon"/>
+			<LineMessage className="it.prodigyt.components.gui.as3.LineMessage" icon="TextAreaIcon">
+				<attr name="maxWidth" renderer="PYStepper" defaultValue="" enumerate="" group="layout"/>
+				<attr name="showNearFocus" renderer="PYStepper" defaultValue="false" enumerate="true,false" group="other"/>
+			</LineMessage>
+			<PfkeyButton className="it.prodigyt.components.gui.as3.PfkeyButton" icon="LabelIcon">
+				<attr name="butLabel" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="pfkName" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+			</PfkeyButton>
+			<PYIFSDownloader className="it.prodigyt.components.base.controls.PYIFSDownloader" icon="LabelIcon">
+				<attr name="string" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYIFSDownloader>
+			<PYOSCommand className="it.prodigyt.components.base.controls.PYOSCommand" icon="LabelIcon">
+				<attr name="commandArgs" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="commandPath" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYOSCommand>
+			<PYBrowser className="it.prodigyt.components.gui.as3.PYBrowser" icon="LabelIcon"/>
+			<PYDSPFService className="it.prodigyt.components.gui.as3.PYDSPFService" icon="LabelIcon">
+				<attr name="leftOrTopStatus" renderer="FieldIO" defaultValue="status_home" enumerate="status_home,status_opened" group="other"/>
+				<attr name="homeX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homeY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="dividePosition" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homePosition" renderer="FieldIO" defaultValue="manual" enumerate="manual,auto" group="other"/>
+				<attr name="returnPFKey" renderer="FieldIO" defaultValue="" enumerate="Enter,CF01,CF02,CF03,CF04,CF05,CF06,CF07,CF08,CF09,CF10,CF11,CF12,CF13,CF14,CF15,CF16,CF17,CF18,CF19,CF20,CF21,CF22,CF23,CF24" group="other"/>
+				<attr name="draggable" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="callProgram" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYDSPFService>
+			<PYExtendedBrowser className="it.prodigyt.components.base.controls.PYExtendedBrowser" icon="LabelIcon" category="public">
+				<attr name="backButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="closeButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="forthButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="maximizeButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="minimizeButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="searchFieldStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="topButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="urlBase" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYExtendedBrowser>
+			<PYExternalBrowser className="it.prodigyt.components.base.controls.PYExternalBrowser" icon="LabelIcon" category="public">
+				<attr name="urlBase" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYExternalBrowser>
+			<PYInternalBrowser className="it.prodigyt.components.base.controls.PYInternalBrowser" icon="LabelIcon" category="public">
+				<attr name="backButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="closeButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="forthButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="maximizeButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="minimizeButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="searchFieldStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style"/>
+				<attr name="topButtonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton"/>
+				<attr name="urlBase" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYInternalBrowser>
+			<PYLabelPfkey className="it.prodigyt.components.gui.as3.PYLabelPfkey" icon="LabelIcon">
+				<attr name="butLabel" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="pfkName" renderer="FieldIO" defaultValue="" enumerate="" group="text"/>
+				<attr name="isMenuBack" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+			</PYLabelPfkey>
+			<PYMail className="it.prodigyt.components.gui.as3.PYMail" icon="LabelIcon">
+				<attr name="body" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="subject" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="to" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="cc" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="bcc" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYMail>
+			<PYMailer className="it.prodigyt.components.services.PYMailer" icon="LabelIcon">
+				<attr name="user" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="password" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="smtp" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="port" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="useAuth" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="useSPA" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="useSSL" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="useTLS" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+			</PYMailer>
+			<PYRecents className="it.prodigyt.components.gui.as3.PYRecents" icon="LabelIcon">
+				<attr name="popAreaStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYNBox"/>
+			</PYRecents>
+			<PYSPOOLService className="it.prodigyt.components.gui.as3.PYSPOOLService" icon="LabelIcon">
+				<attr name="allowDrag" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="leftOrTopStatus" renderer="FieldIO" defaultValue="status_home" enumerate="status_home,status_opened" group="other"/>
+				<attr name="homeX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homeY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="dividePosition" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homePosition" renderer="FieldIO" defaultValue="manual" enumerate="manual,auto" group="other"/>
+				<attr name="returnPFKey" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="connectionPort" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="connectionIP" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYSPOOLService>
+			<PYSPOOLServiceV2 className="it.prodigyt.components.gui.as3.PYSPOOLServiceV2" icon="LabelIcon"/>
+			<PYStats className="it.prodigyt.components.gui.as3.PYStats" icon="LabelIcon"/>
+			<PYTelnetService className="it.prodigyt.components.gui.as3.PYTelnetService" icon="LabelIcon">
+				<attr name="leftOrTopStatus" renderer="FieldIO" defaultValue="status_home" enumerate="status_home,status_opened" group="other"/>
+				<attr name="homeX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleX" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homeY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="openedY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="minScaleY" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="dividePosition" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="homePosition" renderer="FieldIO" defaultValue="manual" enumerate="manual,auto" group="other"/>
+				<attr name="returnPFKey" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+			</PYTelnetService>
+			<PYVisualMailer className="it.prodigyt.components.gui.as3.PYVisualMailer" icon="LabelIcon">
+				<attr name="buttonStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYButton" />
+				<attr name="inputStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="FieldIO" />
+				<attr name="labelStyle" renderer="FieldIO" defaultValue="" enumerate="" group="style" subComponent="PYLabel" />
+				<attr name="user" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="password" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="smtp" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="port" renderer="FieldIO" defaultValue="" enumerate="" group="other"/>
+				<attr name="useAuth" renderer="FieldIO" defaultValue="true" enumerate="true,false" group="other"/>
+				<attr name="useSPA" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="useSSL" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+				<attr name="useTLS" renderer="FieldIO" defaultValue="false" enumerate="true,false" group="other"/>
+			</PYVisualMailer>			
+		</WIDGETS>
+	</components>
+</componentsSection>

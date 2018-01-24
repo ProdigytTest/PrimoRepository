@@ -1,0 +1,807 @@
+<root>
+
+	
+	<!-- Sezione dedicata ai default di progetto -->
+	<projectSection>
+		
+		
+
+	<skinProperties imgDir="assets/filesi/">
+	
+			<desktop name="BlueDiamond"/>
+		
+		<styles>
+			
+			<!-- nota: alcuni defaults sono a discrezione utente, altri sono obbligatori come inizializzazione componente
+				es. text vuoto, enabled false per input, background alpha per sfondi etc.... VERIFICARE!!!!!!!!! -->
+			
+			
+			<!-- Inizio sezione stili globali -->
+			
+			<global>
+			
+			<default backgroundColor="0x000000" backgroundAlpha="0" backgroundImage="" foregroundColor="0xffffff" foregroundAlpha="1" fontFamily="Arial Mono" monoSpaced="true" fontSize="18" fontWeight="normal" borderColor="0" borderStyle="none" borderSize="0" borderRadius="0" shadow="false" state="" visible="true"/>
+				
+			<stileDitta fontFamily="Arial Black" fontSize="96" fontWeight="bold" foregroundColor="0x66bbff" wordWrap="true" autoHeight="true" foregroundAlpha=".15"/>
+		
+			<stileTitolo fontFamily="Arial" fontSize="30" fontWeight="normal" foregroundColor="0xffffff" wordWrap="true" autoHeight="true" foregroundAlpha="1" borderStyle="solid" borderSides="bottom" borderColor="0x66bbff" borderSize="2"/>
+		
+			<stileTooltip fontSize="18" backgroundColor="0xffffdd" backgroundAlpha="0.9"/>
+		
+			<desktopStyle backgroundAlpha="1" backgroundColor="0x000000" toColor="0x666666" toColorAlpha="1" gradientType="linear" gradientAngle="90" toColorRatio="240" bgColorRatio="180"/>
+			
+			<FieldIOExtPop backgroundColor="0xffffff" backgroundAlpha="1" backgroundImage="assets/filesi/f11.png" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0xffffff" borderStyle="solid" borderSize="1" borderRadius="0" visible="true" blendMode="invert"/>
+			
+			<touchPad backgroundColor="0x000000" backgroundAlpha="1" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x666666" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18" shadow="true"/>	
+			
+			<touchButton backgroundColor="0x666666" backgroundAlpha="1" gradientType="linear" gradientAngle="90" toColor="0x000000" toColorAlpha="1" toColorRatio="128" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x334455" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18"/>
+			
+			
+			<touchButtonSelected backgroundColor="0xaa6600" backgroundAlpha="1" gradientType="linear" gradientAngle="90" toColor="0x000000" toColorAlpha="1" toColorRatio="128" foregroundColor="0xffaa66" foregroundAlpha="1" borderColor="0xffaa66" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18"/>
+				
+			<lookupList backgroundColor="0x000000" backgroundAlpha="1" gradientType="linear" gradientAngle="0" toColor="0x333333" toColorAlpha="1" toColorRatio="0" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x666666" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18"/>
+			
+			
+			<lookupListItem backgroundColor="0x666666" backgroundAlpha="0" gradientType="none" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x666666" borderStyle="solid" borderSides="bottom" borderSize="1" fontFamily="Arial Mono" monoSpaced="true" fontSize="18"/>
+			
+			<lookupListContent foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x666666" fontFamily="Arial Mono" monoSpaced="true" fontSize="18"/>
+			
+			<lookupListItemSelected backgroundColor="0xaa6600" backgroundAlpha="0.1" foregroundColor="0xffaa66" foregroundAlpha="1" borderColor="0xffaa66" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18"/>	
+			
+
+			<tableRow backgroundColor="0xffffff" backgroundAlpha="0" borderStyle="none" borderColor="0xffffff" borderSides="bottom" borderSize="1" autoSize="true" borderAlpha="0.1"/>
+				
+			<tableRowSelected backgroundAlpha="0.2"/>	
+					
+			<flow borderStyle="solid" borderColor="0x66bbff" borderSides="left" borderSize="3"/>
+
+			<flowItem foregroundColor="0x999999" foregroundAlpha="1" backgroundColor="0x999999" backgroundAlpha="0" fontWeight="normal" fontSize="22" borderStyle="solid" gradientType="linear" toColor="0x222222" gradientAngle="90" borderColor="0x666666" borderSize="0" borderAlpha="0" borderSides="none"/>
+	
+			<flowOver foregroundColor="0xffffff" foregroundAlpha="1" backgroundColor="0x333333" backgroundAlpha="1" fontWeight="normal" fontSize="22" borderAlpha="0" borderSides="none" borderStyle="solid"/>
+
+			<flowSelected foregroundColor="0xffffff" foregroundAlpha="1" backgroundColor="0x666666" backgroundAlpha="0.5" fontWeight="bold" fontSize="22" borderStyle="solid" borderColor="0x66bbff" gradientAngle="90" gradientType="linear" toColorAlpha="0.5" toColorRatio="0x222222" borderSides="bottom" borderSize="3"/>	
+			
+			
+			<ioPop borderStyle="solid" borderColor="0x666666" borderSides="all" borderSize="2" backgroundAlpha="0.8" backgroundColor="0xbbbbbb" gradientAngle="90" toColorAlpha="1" bevel="none" borderRadius="5" toColor="0xffffff" gradientType="linear" shadow="true"/>
+
+			<ioPopItem foregroundColor="0x000022" foregroundAlpha="1" backgroundColor="0xffffff" backgroundAlpha="0" fontWeight="normal" fontSize="14" borderStyle="none"/>
+	
+			<ioPopOver foregroundColor="0x000000" backgroundColor="0x999999" backgroundAlpha="1" fontWeight="normal" fontSize="14"/>
+
+			<ioPopSelected foregroundColor="0xffffff" foregroundAlpha="1" backgroundColor="0x333333" backgroundAlpha="1" fontWeight="bold" fontSize="14"/>	
+			
+			
+			
+			
+			<tablePop backgroundColor="0x444444" backgroundAlpha="1" foregroundColor="0x66bbff" foregroundAlpha="1" borderColor="0x66bbff" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18" shadow="true" shadowColor="0x000000"/>	
+		
+			<tablePopItem backgroundColor="0x666666" backgroundAlpha="0" gradientType="linear" gradientAngle="90" toColor="0x000000" toColorAlpha="0" toColorRatio="128" percentWitdh="100" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x334455" borderStyle="none" borderSize="1" borderRadius="8" fontFamily="Arial" fontSize="14"/>
+			
+				<tablePopOver backgroundColor="0x222222" backgroundAlpha="1" gradientType="linear" toColor="0x222222" toColorAlpha="1" toColorRatio="128" foregroundColor="0xffffff" borderColor="0x000000" borderStyle="none" borderSize="1" fontFamily="Arial" fontSize="14"/>
+
+				/&gt;
+			
+			
+			<tablePopSelected backgroundColor="0x66bbff" backgroundAlpha="0" gradientType="linear" gradientAngle="90" toColor="0x000000" toColorAlpha="0" toColorRatio="128" foregroundColor="0x66bbff" foregroundAlpha="1" borderColor="0x66bbff" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial" fontSize="14"/>
+			
+			<gestureButton backgroundColor="0x666666" backgroundAlpha="1" gradientType="linear" gradientAngle="90" toColor="0x000000" toColorAlpha="1" toColorRatio="128" foregroundColor="0xdddddd" foregroundAlpha="1" borderColor="0x334455" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="72"/>
+				
+				
+			</global>
+			
+			
+			<!-- Inizio sezione stili dei singoli componenti -->
+			
+			<PYVisualSession>
+				<default/>
+				<areaStyle mouseEnabled="false" backgroundAlpha="0" backgroundColor="0x222222" toColor="0x000000" toColorAlpha="0" gradientType="linear" percentHeight="" gradientAngle="270" bgColorRatio="0" borderRadius="20" borderStyle="none" borderColor="0x333333"/>
+			</PYVisualSession>
+			
+			<LineMessage>
+				<default backgroundAlpha=".1" fontFamily="Arial" fontSize="22" foregroundColor="0xffffff" backgroundColor="0xCC3300" autoSize="true" visible="false" x="351" y="650" toColorAlpha="1" toColor="0xcc3300" gradientType="linear"/>
+			</LineMessage>			
+			<VerticalSpacingLayout>
+				<default borderStyle="solid" borderSize="1" borderColor="0x666666" backgroundAlpha="0.6" backgroundImage="" shadow="false" backgroundColor="0x666666" gradientAngle="90" gradientType="linear" toColorAlpha="0.6" toColor="0x222222" toColorRatio="128" borderRadius="10" borderAlpha="0.6" paddingTop="5" verticalSpacing="5" autoSize="false" layoutActive="true" paddingLeft="10" paddingBottom="10" paddingRight="10" percentHeight="100" percentWidth="100"/>
+			</VerticalSpacingLayout>
+			
+			
+			<DateCalendar>
+				<default/>
+			</DateCalendar>
+			
+			<AnalogClock>
+				<default/>
+			</AnalogClock>
+
+			
+			<Panel>
+				<default borderRadius="0" backgroundAlpha="0" percentHeight="100" percentWidth="100"/>
+				
+			</Panel>
+		
+			<ExpandPanel>
+				<default/>
+			</ExpandPanel>
+			
+			<Object>
+				<default/>
+			</Object>
+		
+			<Cursor>
+				<default backgroundColor="0xffbb00" backgroundAlpha="0.1" borderStyle="solid" borderColor="0xffbb00" borderAlpha="1" borderRadius="7" shadow="true" shadowColor="0xffbb00"/>
+			</Cursor>
+
+			
+			<GenericFormat>
+				<default borderStyle="none" borderSize="1" borderColor="0x000000" backgroundAlpha="0" backgroundImage="" percentHeight="100" shadow="false"/>
+
+				<FormatoInvisibile visible="false"/>
+			</GenericFormat>	
+			
+			<FlatDivideLayout>
+				<default borderStyle="none" borderSize="1" borderColor="0x000000" backgroundAlpha="0.1" backgroundImage="" shadow="false" layoutDirection="vertical" vgap="12" hgap="16" dividePosition="200" separatorSize="1" separatorColor="0xffffff" separatorAlpha=".5" percentHeight="0" verticalScrolling="true" constantStyle="insideFlatDivide" verticalAutosize="true" includeInLayout="false" verticalAlign="center" constantAlign="right" horizontalScrolling="false" backgroundColor="0xffffff"/>
+			</FlatDivideLayout>
+		
+	
+			<PfkeysContainer>
+				<default backgroundColor="0x00cccc" backgroundAlpha="1" width="600" height="160" clip="false" spacing="1"/>
+			</PfkeysContainer>
+			
+			<PfkeysContainerV2>
+				<default backgroundColor="0x00cccc" backgroundAlpha="1" width="600" height="160" clip="false" spacing="1"/>
+			</PfkeysContainerV2>	
+			
+			<ActionsContainer>
+				<default/>
+			</ActionsContainer>
+			
+			<PYNbox>
+				<default clip="true"/>
+				<default2/>
+			</PYNbox>
+			
+			<PYNboxExtRenderer>
+				<default clip="true" verticalScrolling="true"/>
+			</PYNboxExtRenderer>
+				
+		
+			
+			<BaseTableV2>
+				<default fontFamily="Arial Mono" monoSpaced="true" rowSpacing="1" hLineColor="0x666666" hLineSize="1" vLineColor="0x666666" vLineSize="1" clip="true" fitBottom="true" rowStyle="tableRow" popAreaStyle="tablePop" popAreaItemStyle="tablePopItem" popAreaOverStyle="tablePopOver" popAreaSelectedStyle="tablePopSelected" initialRowSetting="singleRow" percentWidth="0"/>
+				
+				
+
+				<tableInsideWindow fontFamily="Arial" rowSpacing="1" hLineColor="0x666666" hLineSize="1" vLineColor="0x666666" vLineSize="1" clip="true" fitBottom="false" popAreaStyle="tablePop" popAreaItemStyle="tablePopItem" popAreaOverStyle="tablePopOver" popAreaSelectedStyle="tablePopSelected"/>
+				
+		
+			
+			</BaseTableV2>		
+			
+			<BaseHeaderV2>
+				<default backgroundColor="0x0564e3" backgroundAlpha="0" borderStyle="none" borderColor="0x667799" borderSides="bottom" borderSize="3" gradientAngle="90" toColor="0x0564e3" toColorAlpha="0" toColorRatio="128" percentWidth="100"/>
+				<IntestazNelleWindow backgroundColor="0x0564e3" backgroundAlpha="0" borderStyle="none" borderColor="0x667799" borderSides="bottom" borderSize="3" gradientAngle="90" toColor="0x0564e3" toColorAlpha="0" toColorRatio="128" percentWidth="100"/>
+			</BaseHeaderV2>
+			
+			<BaseColumnV2>
+			<default toColor="0xddeeff" backgroundAlpha="0.5" toColorAlpha="0.1" toColorRatio="128" gradientAngle="90" gradientType="linear" backgroundColor="0xddeeff" borderColor="0xddeeff" borderAlpha="0.4" borderStyle="solid" align="left"/>
+			<IntestazNelleWindow toColor="0xddeeff" backgroundAlpha="0.5" toColorAlpha="0.1" toColorRatio="128" gradientAngle="90" gradientType="linear" backgroundColor="0xddeeff" borderColor="0xddeeff" borderAlpha="0.4" borderStyle="solid" align="left"/>
+				<ditte/>
+			</BaseColumnV2>	
+				
+<!--  		<Window
+				borderStyle="solid"
+				borderSize="1"
+				borderRadius="15"
+				borderColor="0xccddff"
+				backgrooundColor="0x000033"
+				backgroundAlpha=".1"
+				shadow="true"
+			/>
+		
+			<Window
+				style="default"
+				borderStyle="solid"
+				borderSize="1"
+				borderRadius="15"
+				borderColor="0x334466"
+				backgroundColor="0x9999aa"
+				backgroundAlpha=".7"
+				shadow="true"
+				gradientType="linear"
+				toColor="0x000033"
+				toColorAlpha=".1"
+				toColorRatio="128"/>
+-->				
+			<Window>
+				<default clip="true" floating="false" includeInLayout="false" borderStyle="solid" borderSize="2" borderRadius="10" borderColor="0x666666" backgroundColor="0x000000" backgroundAlpha="1" toColor="0x444444" toColorAlpha="1" gradientType="linear" gradientAngle="270" bgColorRatio="64" toColorRatio="255" shadow="true" verticalSpacing="5" paddingTop="5" paddingLeft="10" bevel="bevel" shadowColor="0X222222" autoSize="false" paddingRight="20" paddingBottom="10"/>
+			
+		
+			</Window>
+			
+			<SflContainer>
+				<default spacing="0"/>
+			</SflContainer>
+			
+			<SflRow>
+				<default autoSize="true" backgroundColor="0xffffff" backgroundAlpha="0" selectedStyle="tableRowSelected"/>
+			
+				
+			</SflRow>
+			
+			<PfkeyButton>
+				<default foregroundColor="0xddffff" fontSize="11" fontWeight="bold" buttonMode="true" useHandCursor="true" mouseChildren="false" clip="false" tabEnabled="false" maxXDistance="80" maxYDistance="50" maxScale="2" backgroundColor="0" backgroundAlpha="0" labelPosition="top" dockActive="true" reflActive="true" magnifier="1.1" toolTipTime="400" toolTipStyle="stileTooltip"/>
+			</PfkeyButton>
+			
+			<SimpleButton>
+				<default foregroundColor="0xddffff" fontSize="14" fontWeight="bold" buttonMode="true" mouseChildren="false" clip="false" enabled="false" tabEnabled="false" backgroundColor="0xcccc00" backgroundAlpha="1"/>
+			</SimpleButton>
+			
+			<ActionButton>
+				<default foregroundColor="0xddffff" fontSize="20" fontWeight="bold" buttonMode="true" useHandCursor="true" mouseChildren="false" tabEnabled="false"/>
+			</ActionButton>
+			
+			
+			<Constant>
+				<default foregroundColor="0xaaaaaa" fontSize="16" fontFamily="Arial Narrow" monoSpaced="true" align="left" alpha="1" calcSize="true"/>
+			
+				<insideFlatDivide foregroundColor="0xaaaaaa" fontSize="16" fontFamily="Arial Narrow" monoSpaced="false" align="left" alpha="1" autoSize="false" calcSize="false" wordWrap="true" autoHeight="true"/>
+			
+				<RigaSflPiccola fontSize="14"/>
+			</Constant>		
+			
+			<FieldO>
+				<default calcSize="true" fontSize="16" fontFamily="Arial" calcSizePercentWidth="60" backgroundAlpha="1" backgroundColor="0x666666" gradientRadius="0" gradientType="linear" borderColor="0x777777" borderAlpha="1" toColor="0x222222" toColorAlpha="1" borderStyle="solid" gradientAngle="90" monoSpaced="false"/>
+				<NelSubfile foregroundColor="0xcceeff" fontSize="14" fontFamily="Arial" wordWrap="true" monoSpaced="false" autoHeight="true" backgroundAlpha="0.3" backgroundColor="0x666666" gradientRadius="0" gradientType="linear" borderColor="0x777777" borderAlpha="0.5" toColor="0x666666" toColorAlpha="0.1" borderStyle="none" gradientAngle="90" borderSides="bottom,left"/>
+				
+				<RigaSflBold calcSize="true" fontWeight="bold" fontSize="20"/>
+				<RigaSflPiccola calcSize="true" fontSize="14"/>
+			
+			<titoloProgramma autoSize="false" fontSize="22" fontFamily="Arial" monoSpaced="true" fontWeight="bold" foregroundColor="0xeeeeee" backgroundColor="0x0790d7" backgroundAlpha="1" gradientType="linear" gradientAngle="90" toColor="0x0564e3" toColorAlpha=".5" toColorRatio="128" percentWidth="100" bevel="bevel" borderRadius="20" bgColorRatio="0" height="30"/>
+			
+			<titoloProgrammaWindow autoSize="false" fontSize="22" fontFamily="Arial" monoSpaced="false" fontWeight="bold" foregroundColor="0xeeeeee" backgroundColor="0x66bbff" backgroundAlpha="1" gradientType="linear" gradientAngle="90" toColor="0x0564e3" toColorAlpha=".5" toColorRatio="128" percentWidth="100" bevel="bevel" borderRadius="20" bgColorRatio="0" height="30" includeInLayout="false"/>
+			<KeywordColorRed backgroundAlpha=".5" backgroundColor="0xff5500" borderAlpha="1" borderColor="0x777777" borderStyle="none" gradientAngle="90" gradientRadius="0" gradientType="linear" toColor="0xff0000" toColorAlpha=".2" calcSize="false" calcSizePercentWidth="60" fontFamily="Arial" fontSize="14" monoSpaced="false" shadow="false" toColorRatio="128" autoHeight="true" wordWrap="true"/></FieldO>	
+		
+			<FieldIO>
+				<NelSubfile foregroundColor="0x000022" fontFamily="Arial" monoSpaced="false" fontWeight="bold" fontSize="14" backgroundColor="0xbbbbbb" backgroundAlpha="0.8" borderStyle="solid" borderColor="0xcccccc" borderSides="all" borderRadius="5" toColor="0xffffff" toCOlorAlpha=".7" gradientType="linear" gradientAngle="90" toColorRatio="128" enabled="true" bevel="inset" restrictToUpperCase="true" autoAdvance="true" toColorAlpha="1" wordWrap="true" autoHeight="true"/>
+				<default foregroundColor="0x000022" fontFamily="Arial" monoSpaced="false" fontWeight="bold" fontSize="14" backgroundColor="0xbbbbbb" backgroundAlpha="0.8" borderStyle="solid" borderColor="0xcccccc" borderSides="all" borderRadius="5" toColor="0xffffff" toCOlorAlpha=".7" gradientType="linear" gradientAngle="90" toColorRatio="128" enabled="true" bevel="inset" restrictToUpperCase="true" autoAdvance="true" calcSize="true" toColorAlpha="1" calcSizePercentWidth="65"/>
+			</FieldIO>
+			
+			<FieldIODecodePop>
+				<default foregroundColor="0xddddbb" fontFamily="Arial Mono" monoSpaced="true" fontWeight="bold" fontSize="18" borderRadius="0" backgroundColor="0xaaaaaa" backgroundAlpha="0.1" borderStyle="solid" borderColor="0xcccccc" borderSides="bottom" enabled="true" restrictToUpperCase="true" autoAdvance="true" decodeStyle="FieldIODecodePop" calcSize="true"/>
+			
+			
+				<FieldIODecodePop backgroundColor="0x0790d7" backgroundAlpha="1" gradientType="linear" gradientAngle="0" toColor="0x0790d7" toColorAlpha="0" toColorRatio="128" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x334455" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18" visible="true"/>
+			</FieldIODecodePop>
+			
+			<FieldIONumeric>
+				<default foregroundColor="0xddddbb" fontFamily="Arial Mono" monoSpaced="true" fontWeight="bold" fontSize="18" borderRadius="0" backgroundColor="0xaaaaaa" backgroundAlpha="0.1" borderStyle="solid" borderColor="0xcccccc" borderSides="bottom" enabled="true" restrictToUpperCase="true" autoAdvance="true" popAreaStyle="touchPad" popAreaItemStyle="touchButton" popAreaSelectedStyle="touchButtonSelected" listStyle="lookupList" listItemStyle="lookupListItem" listOverStyle="lookupListContent" listSelectedStyle="lookupListItemSelected" calcSize="true"/>
+				
+			
+		</FieldIONumeric>
+					
+			
+			<FieldIOGesture>
+			<default foregroundColor="0xddddbb" fontFamily="Arial Mono" monoSpaced="true" fontWeight="bold" fontSize="18" borderRadius="0" backgroundColor="0xaaaaaa" backgroundAlpha="0.1" borderStyle="solid" borderColor="0xcccccc" borderSides="bottom" enabled="true" restrictToUpperCase="true" autoAdvance="true" spacing="5" popAreaItemStyle="gestureButton" listStyle="lookupList" listItemStyle="lookupListItem" listOverStyle="lookupListContent" listSelectedStyle="lookupListItemSelected" calcSize="true"/>
+			
+				
+			<FieldIOGestureStyle backgroundColor="0x000000" backgroundAlpha="1" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0x666666" borderStyle="solid" borderSize="1" borderRadius="8" fontFamily="Arial Mono" monoSpaced="true" fontSize="18"/>
+				
+			
+					
+			</FieldIOGesture>
+		
+			
+			
+			<FieldIODate>
+				<default foregroundColor="0xddddbb" fontFamily="Arial Mono" monoSpaced="true" fontWeight="bold" fontSize="18" borderRadius="0" backgroundColor="0xaaaaaa" backgroundAlpha="0.1" borderStyle="solid" borderColor="0xcccccc" borderSides="bottom" enabled="true" restrictToUpperCase="true" autoAdvance="true" popAreaStyle="touchPad" popAreaItemStyle="touchButton" popAreaSelectedStyle="touchButtonSelected" calcSize="true"/>
+			</FieldIODate>
+			
+			<FieldIOExtPop>
+				<default foregroundColor="0x000022" fontFamily="Arial" monoSpaced="false" fontWeight="bold" fontSize="14" backgroundColor="0xbbbbbb" backgroundAlpha="0.8" borderStyle="solid" borderColor="0xcccccc" borderSides="all" borderRadius="5" toColor="0xffffff" toCOlorAlpha=".7" gradientType="linear" gradientAngle="90" toColorRatio="128" enabled="true" bevel="inset" restrictToUpperCase="true" autoAdvance="true" calcSize="true" toColorAlpha="1" calcSizePercentWidth="65" iconStyle="FieldIOExtPop"/>
+			</FieldIOExtPop>
+			
+			<FIeldIOPopNoInput>
+				<default foregroundColor="0x000000" fontFamily="Arial Mono" monoSpaced="true" fontWeight="bold" fontSize="18" borderRadius="5" backgroundColor="0xbbbbbb" backgroundAlpha="0.8" borderStyle="solid" borderColor="0xcccccc" borderSides="all" enabled="true" restrictToUpperCase="true" autoAdvance="true" popAreaStyle="ioPop" popAreaItemStyle="ioPopItem" popAreaOverStyle="ioPopOver" popAreaSelectedStyle="ioPopSelected" toColorAlpha="1" toColor="0xffffff" toColorRatio="128" bevel="inset" gradientType="linear" gradientAngle="90" calcSize="true" calcSizePercentWidth="60"/>
+			
+				<ioPop foregroundColor="0x000000" borderRadius="5" backgroundColor="0xbbbbbb" backgroundAlpha="0.8" borderStyle="solid" borderColor="0xcccccc" borderSize="1" bevel="inset" gradientAngle="90" gradientType="linear" toColor="0xffffff" toColorAlpha="1"/>
+		
+				<ioPopItem foregroundColor="0xffffff" foregroundAlpha="1" backgroundColor="0xffffff" backgroundAlpha="0" fontFamily="Arial Mono" monoSpaced="true" fontWeight="normal" fontSize="18"/>
+			
+				<ioPopOver foregroundColor="0xffffff" foregroundAlpha="1" backgroundColor="0xffffff" backgroundAlpha="0.2" fontFamily="Arial Mono" monoSpaced="true" fontWeight="normal" fontSize="14"/>
+			
+			
+				<ioPopSelected foregroundColor="0x232c51" foregroundAlpha="1" backgroundColor="0xffffff" backgroundAlpha="0.7" fontFamily="Arial"/>
+			</FIeldIOPopNoInput>
+			
+			<FieldIOPop>
+				<default foregroundColor="0xddddbb" fontWeight="bold" fontSize="18" borderRadius="0" backgroundColor="0xaaaaaa" backgroundAlpha="0.1" borderStyle="solid" borderColor="0xcccccc" borderSides="bottom" enabled="true" restrictToUpperCase="true" autoAdvance="true" popAreaStyle="ioPop" popAreaItemStyle="ioPopItem" popAreaOverStyle="ioPopOver" popAreaSelectedStyle="ioPopSelected"/>
+			
+				<ioPop foregroundColor="0xddddbb" borderRadius="18" backgroundColor="0x232c51" backgroundAlpha="1" borderStyle="solid" borderColor="0xffffff" borderSize="1"/>
+		
+				<ioPopItem foregroundColor="0xffffff" foregroundAlpha="1" backgroundColor="0xffffff" backgroundAlpha="0" fontWeight="normal" fontSize="18"/>
+			
+				<ioPopOver foregroundColor="0xffffff" foregroundAlpha="1" backgroundColor="0xffffff" backgroundAlpha="0.2"/>
+			
+
+				<ioPopSelected foregroundColor="0x232c51" foregroundAlpha="1" backgroundColor="0xffffff" backgroundAlpha="0.7"/>
+			</FieldIOPop>	
+			
+			<Hidden>
+				<default visible="false"/>
+			</Hidden>
+			
+			<PopList>
+				<default buttonMode="true" tabEnabled="true" backgroundColor="0xffffff" backgroundAlpha=".2" foregroundColor="0xffffff" foregroundAlpha="1" borderColor="0" borderStyle="none" borderSize="0" borderRadius="0"/>
+			</PopList>
+			
+			<AnimatedRandomWalk>
+				<dafult/>
+			</AnimatedRandomWalk>
+			
+			<DisplayFile>
+				<dafult/>
+			<default verticalScrolling="false"/></DisplayFile>
+			
+			<FlowContainer>
+				<default fontFamily="Arial" monoSpaced="true" fontSize="16" textColor="0x333333" highColor="0xffffff" lineColor="0x333333" popAreaStyle="flow" popAreaItemStyle="flowItem" popAreaOverStyle="flowOver" popAreaSelectedStyle="flowSelected"/>
+			
+		
+			
+			</FlowContainer>
+			
+			<FlowContainerItem>
+				<default borderRadius="20"/>
+				<flow borderStyle="solid" borderColor="0x66bbff" borderSides="left" borderSize="3"/>
+				
+			</FlowContainerItem>	
+		<BaseColumn><default/></BaseColumn></styles>
+			
+			
+
+		<pfkeys>
+			<navigation>
+				<pfkey name="F02" to="NAV_PAGEBACK" position="1"/>
+				<pfkey name="F03" to="NAV_BACK" position="2"/>
+				<pfkey name="F04" to="NAV_HOME" position="3"/>
+				<pfkey name="F05" to="NAV_PRINT" position="80"/>
+				<pfkey name="ROLLDOWN" to="NAV_DOWN" position="90"/>
+				<pfkey name="ROLLUP" to="NAV_UP" position="91"/>
+				<pfkey name="F12" to="NAV_LOOKUP" position="97"/>
+				<pfkey name="Enter" to="NAV_FORTH" position="98"/>
+				<pfkey name="F01" to="NAV_CONFIRM" position="99"/>		
+			</navigation>
+			<actions>
+
+			</actions>
+			
+		</pfkeys>
+		
+	</skinProperties>
+	
+	
+	
+	</projectSection>
+	
+	
+	
+	
+	
+	<!-- Sezione dedicata ai pairing -->
+	<pairingsSection>
+		<pairing text="DisplayFile" name="DisplayFile" component="DisplayFile" style="default"/>
+		<pairing text="RecordFormat" name="RecordFormat" component="FlatDivideLayout" style="default"/>
+		<pairing text="WindowFormat" name="WindowFormat" component="Window" style="default"/>
+		<pairing text="SubfileControlFormat" name="SubfileControlFormat" component="VerticalSpacingLayout" style="default"/>
+		<pairing text="SubfileContainer" name="SubfileContainer" component="BaseTableV2" style="default"/>
+		<pairing text="SubfileRowsContainer" name="SubfileRowsContainer" component="PYNboxExtRenderer" style="default"/>
+		<pairing text="SubfileHeader" name="SubfileHeader" component="BaseHeaderV2" style="default"/>
+		<pairing text="SubfileColumn" name="SubfileColumn" component="BaseColumnV2" style="default"/>
+		<pairing text="SubfileRow" name="SubfileRow" component="SflRow" style="default"/>
+		<pairing text="Hidden" name="Hidden" component="Hidden" style="default"/>
+		<pairing text="ConstantField" name="ConstantField" component="Constant" style="default"/>
+		<pairing text="OutputField" name="OutputField" component="FieldO" style="default"/>
+		<pairing text="InputOutputField" name="InputOutputField" component="FieldIO" style="default"/>
+		<pairing text="InputField" name="InputField" component="FieldIO" style="default"/>
+		<pairing text="InputPopField" name="InputPopField" component="FIeldIOPopNoInput" style="default"/>
+		<pairing text="FunctionKey" name="FunctionKey" component="PfkeyButton" style="default"/>
+		<pairing text="Cursor" name="Cursor" component="Cursor" style="default"/>
+		<pairing text="Values" name="Values" component="PopList" style="default"/>
+		
+	</pairingsSection>
+	
+	<!-- Sezione dedicata al desktop (READ ONLY) -->
+	<desktopsSection>
+	   <desktops>
+			
+			<desktop name="BlueDiamond" destination="desktop" resolution="1280x768" orientation="vertical" touchEnabled="true" shellProgram="">
+			<gui>
+				<AlphaDesktop style="desktopStyle" height="768" name="DESKTOP" width="1280">
+		    	 	<!--DITTA -->
+		    	 	<FieldO style="stileDitta" text="ELELCO" name="__DITTA" width="700" height="150" x="-10" y="580" rotation="-90"/>
+		    	 	<!--TITOLO -->
+		    	 	<FieldO style="stileTitolo" name="__TITOLO" width="1200" height="50" x="121" y="3"/>
+					
+					<AnalogClock x="30" y="30" width="50" height="50" name="__ORA"/> 
+	    	 		
+	    	 		<!--FLOW MENU
+	    	 		<Panel backgroundAlpha="0" backgroundColor="0" name="FLOW" width="200" height="768" x="110" y="0">
+						<FlowContainer name="__MENU__" includeArea="false"/>
+						<FlowContainerItem name="FLOW_ITEM" visible="false" borderStyle="solid" borderSides="left" borderSize="2"/>
+					</Panel>    -->
+					
+					<!-- AREA DI scorrimento 0x253472 -->
+					<PYNbox layout="free" spacing="15" height="580" name="BACK_AREA" width="1060" x="121" y="50">
+						<!--FLOW MENU -->
+						<FlowContainer name="__MENU__" includeArea="false"/>
+						<!-- AREA -->
+						<PYVisualSession height="580" name="AREA" width="1060" style="areaStyle"/>
+					</PYNbox> 
+					
+					<!--PFKEY BUTTONS -->
+					<PYNbox layout="horizontal" contentAlign="right" spacing="100" clip="false" backgroundAlpha="0" backgroundColor="0xffffff" name="PFKEYS_AREA" height="80" width="930" x="121" y="690">	
+						<PfkeysContainer showDock="false" x="10" width="650" height="80" y="-15" clip="false" spacing="1" backgroundAlpha="0" backgroundColor="0xff0000">
+							<PfkeyButton y="0" x="0" name="NAV_PAGEBACK" backgroundImage="assets/elelcorb/F02.png" width="50" height="50" toolTip="Schermo Precedente"/>
+							<PfkeyButton y="0" x="55" name="NAV_BACK" backgroundImage="assets/elelcorb/F03.png" width="50" height="50" toolTip="Indietro"/>
+							<PfkeyButton y="0" x="110" name="NAV_HOME" backgroundImage="assets/elelcorb/F04.png" width="50" height="50" toolTip="Ritorno a Menu"/>
+							<!-- <PfkeyButton y="0" x="165"  name="NAV_PRINT"  backgroundImage="assets/BlueDiamond/F5.png"  width="50" height="50"   toolTip="Indietro"/> -->
+							<PfkeyButton y="0" x="165" name="NAV_PRINT" backgroundImage="assets/elelcorb/F05.png" width="50" height="50" toolTip="Stampa"/>
+							<PfkeyButton y="0" x="220" name="NAV_LOOKUP" backgroundImage="assets/elelcorb/F12.png" width="50" height="50" toolTip="Interrogazione tabella"/>
+							<PfkeyButton y="0" x="275" name="NAV_DOWN" backgroundImage="assets/elelcorb/ROLLDOWN.png" width="50" height="50" toolTip="Pagina indietro"/>
+							<PfkeyButton y="0" x="330" name="NAV_UP" backgroundImage="assets/elelcorb/ROLLUP.png" width="50" height="50" toolTip="Pagina avanti"/>
+							<PfkeyButton y="0" x="385" name="NAV_FORTH" backgroundImage="assets/elelcorb/Enter.png" width="50" height="50" toolTip="Invio"/>
+							<PfkeyButton y="0" x="440" name="NAV_CONFIRM" backgroundImage="assets/elelcorb/F01.png" width="50" height="50" toolTip="Conferma"/>
+						
+						</PfkeysContainer>
+						<PYNbox style="default2" backgroundAlpha="0" name="ACTIONS_AREA" width="550" height="80" x="10" y="-15" clip="false">
+						
+							<ActionsContainer showDock="false" backgroundAlpha="0" backgroundColor="0xff0000" spacing="1" name="BUTTON_AREA" height="80" width="550" x="0" y="0" clip="false"/> 
+						</PYNbox>		
+						
+					</PYNbox>
+						
+					<!--ACTIONS BUTTONS per sinv al momento invisibile
+					<ExpandPanel backgroundAlpha="0.1" borderRadius="10" backgroundColor="0" visible="false" name="ACTIONS_AREA" width="250" height="40" x="1030" y="730" destHeight="250" destY="490" >
+					<ExpandPanel backgroundAlpha="0.1" borderRadius="10" backgroundColor="0" visible="false" name="ACTIONS_AREA" width="250" height="40" x="2030" y="730" destHeight="250" destY="490" clip="true">
+						<Constant text="AZIONI" y="0" x="0" width="200" height="40" fontSize="28" fontWeight="bold" borderStyle="none" borderSides="bottom" borderColor="0xbbddee" useHandCursor="true"/>
+						<ActionsContainer backgroundAlpha="0" backgroundColor="0" spacing="1" name="BUTTON_AREA" x="0" y="25"/> 
+					</ExpandPanel>	
+					-->	
+						<!--MESSAGE LINE -->
+						<LineMessage name="__MSGLINE" x="121" y="600" text=""/>
+						<FieldIO backgroundAlpha=".8" fontFamily="Arial Mono" fontSize="18" foregroundColor="0x002244" backgroundColor="0xffffff" height="25" tabEnabled="false" tabChildren="false" name="__CMDLINE" visible="false" width="600" x="20" y="680" text="CALL RB"/>
+					<Panel backgroundAlpha="0" backgroundColor="0" height="1" name="TRASH" width="1" x="0" y="0" visible="false"/>
+					<Panel percentHeight="100" percentWidth="100" name="WAIT" visible="false" ShowLoadingIcon="force" blendMode="invert"/>
+			
+				</AlphaDesktop>
+				</gui>
+
+
+				<elements>
+					<element name="menu" component="FlowContainer" compName="__MENU__"/>
+					<element name="navigation" component="PfkeysContainer" compName=""/>
+					<element name="calendar" component="DateCalendar" compName="__DATA"/>
+					<element name="clock" component="AnalogClock" compName="__ORA"/>
+					<element name="commandLine" component="" compName=""/>
+					<element name="companyName" component="FieldO" compName="__DITTA"/>
+					<element name="title" component="FieldO" compName="__TITOLO"/>
+				</elements>
+			</desktop>
+		 </desktops>
+	</desktopsSection>
+	
+	<!-- Sezione dedicata alle keywords -->
+	<keywordsSection>
+		<defaultConds>
+			<defaultCond keyword="COLOR" kwvalue="RED" component="OUTPUT" attrib="style" value="KeywordColorRed"/>
+			<defaultCond keyword="COLOR" kwvalue="WHT" component="OUTPUT" attrib="foregroundColor" value="0xffffff"/>
+			<defaultCond keyword="COLOR" kwvalue="GRN" component="OUTPUT" attrib="foregroundColor" value="0x00ff00"/>
+			<defaultCond keyword="COLOR" kwvalue="BLU" component="OUTPUT" attrib="foregroundColor" value="0x3399ff"/>
+			<defaultCond keyword="COLOR" kwvalue="YLW" component="OUTPUT" attrib="foregroundColor" value="0xffff00"/>
+			<defaultCond keyword="COLOR" kwvalue="PNK" component="OUTPUT" attrib="foregroundColor" value="0xffbbcc"/>
+			<defaultCond keyword="COLOR" kwvalue="TRQ" component="OUTPUT" attrib="foregroundColor" value="0x00ffff"/>	
+			<defaultCond keyword="DSPATR" kwvalue="HI" component="OUTPUT" attrib="fontWeight" value="bold"/>
+			<defaultCond keyword="DSPATR" kwvalue="ND" component="OUTPUT" attrib="visible" value="false"/>
+			<defaultCond keyword="DSPATR" kwvalue="PR" component="OUTPUT" attrib="enabled" value="false"/>
+			<defaultCond keyword="DSPATR" kwvalue="RI" component="OUTPUT" attrib="state" value="reverse"/>
+			<defaultCond keyword="DSPATR" kwvalue="UL" component="OUTPUT" attrib="state" value="underline"/>
+			<defaultCond keyword="DSPATR" kwvalue="CS" component="OUTPUT" attrib="state" value="colsep"/>	
+			<defaultCond keyword="CHECK" kwvalue="LC" component="OUTPUT" attrib="restrictToUpperCase" value="false"/>
+			<defaultCond keyword="CHECK" kwvalue="RB" component="OUTPUT" attrib="rightAdjustBlank" value="true"/>
+			<defaultCond keyword="CHECK" kwvalue="RZ" component="OUTPUT" attrib="rightAdjustZero" value="true"/>
+			<defaultCond keyword="DUP" kwvalue="" component="OUTPUT" attrib="dup" value="true"/>	
+			
+			<defaultCond keyword="COLOR" kwvalue="RED" component="INPOUTPUT" attrib="foregroundColor" value="0xff6666"/>
+			<defaultCond keyword="COLOR" kwvalue="WHT" component="INPOUTPUT" attrib="foregroundColor" value="0xffffff"/>
+			<defaultCond keyword="COLOR" kwvalue="GRN" component="INPOUTPUT" attrib="foregroundColor" value="0x00ff00"/>
+			<defaultCond keyword="COLOR" kwvalue="BLU" component="INPOUTPUT" attrib="foregroundColor" value="0x3399ff"/>
+			<defaultCond keyword="COLOR" kwvalue="YLW" component="INPOUTPUT" attrib="foregroundColor" value="0xffff00"/>
+			<defaultCond keyword="COLOR" kwvalue="PNK" component="INPOUTPUT" attrib="foregroundColor" value="0xff33cc"/>
+			<defaultCond keyword="COLOR" kwvalue="TRQ" component="INPOUTPUT" attrib="foregroundColor" value="0x00ffff"/>	
+			<defaultCond keyword="DSPATR" kwvalue="HI" component="INPOUTPUT" attrib="fontWeight" value="bold"/>
+			<defaultCond keyword="DSPATR" kwvalue="ND" component="INPOUTPUT" attrib="state" value="invisible"/>
+			<defaultCond keyword="DSPATR" kwvalue="PR" component="INPOUTPUT" attrib="enabled" value="false"/>
+			<defaultCond keyword="DSPATR" kwvalue="RI" component="INPOUTPUT" attrib="state" value="reverse"/>
+			<defaultCond keyword="DSPATR" kwvalue="UL" component="INPOUTPUT" attrib="state" value="underline"/>
+			<defaultCond keyword="DSPATR" kwvalue="CS" component="INPOUTPUT" attrib="state" value="colsep"/>	
+			<defaultCond keyword="CHECK" kwvalue="LC" component="INPOUTPUT" attrib="restrictToUpperCase" value="false"/>
+			<defaultCond keyword="CHECK" kwvalue="RB" component="INPOUTPUT" attrib="rightAdjustBlank" value="true"/>
+			<defaultCond keyword="CHECK" kwvalue="RZ" component="INPOUTPUT" attrib="rightAdjustZero" value="true"/>
+			<defaultCond keyword="DUP" kwvalue="" component="INPOUTPUT" attrib="dup" value="true"/>	
+			
+			<defaultCond keyword="COLOR" kwvalue="RED" component="CONSTANT" attrib="foregroundColor" value="0xff6666"/>
+			<defaultCond keyword="COLOR" kwvalue="WHT" component="CONSTANT" attrib="foregroundColor" value="0xffffff"/>
+			<defaultCond keyword="COLOR" kwvalue="GRN" component="CONSTANT" attrib="foregroundColor" value="0x00ff00"/>
+			<defaultCond keyword="COLOR" kwvalue="BLU" component="CONSTANT" attrib="foregroundColor" value="0x3399ff"/>
+			<defaultCond keyword="COLOR" kwvalue="YLW" component="CONSTANT" attrib="foregroundColor" value="0xffff00"/>
+			<defaultCond keyword="COLOR" kwvalue="PNK" component="CONSTANT" attrib="foregroundColor" value="0xffbbcc"/>
+			<defaultCond keyword="COLOR" kwvalue="TRQ" component="CONSTANT" attrib="foregroundColor" value="0x00ffff"/>	
+			<defaultCond keyword="DSPATR" kwvalue="HI" component="CONSTANT" attrib="fontWeight" value="bold"/>
+			<defaultCond keyword="DSPATR" kwvalue="ND" component="CONSTANT" attrib="visible" value="false"/>
+			<defaultCond keyword="DSPATR" kwvalue="PR" component="CONSTANT" attrib="enabled" value="false"/>
+			<defaultCond keyword="DSPATR" kwvalue="RI" component="CONSTANT" attrib="state" value="reverse"/>
+			<defaultCond keyword="DSPATR" kwvalue="UL" component="CONSTANT" attrib="state" value="underline"/>
+			<defaultCond keyword="DSPATR" kwvalue="CS" component="CONSTANT" attrib="state" value="colsep"/>	
+			<defaultCond keyword="CHECK" kwvalue="LC" component="CONSTANT" attrib="restrictToUpperCase" value="false"/>
+			<defaultCond keyword="CHECK" kwvalue="RB" component="CONSTANT" attrib="rightAdjustBlank" value="true"/>
+			<defaultCond keyword="CHECK" kwvalue="RZ" component="CONSTANT" attrib="rightAdjustZero" value="true"/>
+			<defaultCond keyword="DUP" kwvalue="" component="CONSTANT" attrib="dup" value="true"/>		
+		</defaultConds>
+
+	</keywordsSection>
+		
+	<!-- Sezione dedicata alle regole di trasformazione -->
+	<!--  occorre specificare sulla rule se è una regola di trasformazione di componente, o di redirect, o particolare tipo la table -->
+	
+	
+	<rulesSection>
+		<rules>
+		
+		
+		
+			<rule name="TableHeader" headerRows="1" rowsBeforeTable="2" precise="false" default="true"/>
+									<!-- rowsBeforeTable="3" -->
+			<rule name="TableHeader" headerRows="1" rowsBeforeTable="2" precise="false" default="false" priority="3">
+				<cond elemento="DSPF" attributo="name" confronto="eq" valore="BAFWCLFO"/>
+			</rule>
+			
+			<rule name="TableHeader" headerRows="1" rowsBeforeTable="1" precise="true" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="eq" valore="MODULOWD"/>
+			</rule>
+	 		
+			<rule name="TableHeader" headerRows="1" rowsBeforeTable="1" precise="false" default="false">
+				
+				<cond elemento="DSPF" attributo="name" confronto="bg" valore="CO"/>
+				<cond elemento="DSPF" attributo="name" confronto="bg" valore="BA"/>
+				<cond elemento="DSPF" attributo="name" confronto="bg" valore="EF"/>
+			</rule>
+			
+			<rule name="WindowTableHeader" type="transform" toComponent="BaseHeaderV2" toStyle="default" default="true"/>	
+			<rule name="WindowTableHeader" type="transform" toComponent="BaseHeaderV2" toStyle="IntestazNelleWindow" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="bg" valore="BA"/>
+			</rule>
+			
+			<rule name="WindowTableColumn" type="transform" toComponent="BaseColumnV2" toStyle="default" default="true"/>
+			<rule name="WindowTableColumn" type="transform" toComponent="BaseColumnV2" toStyle="IntestazNelleWindow" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="bg" valore="BA"/>
+			</rule>
+			
+			
+			
+			<rule name="ProgramTitle" type="redirect" fromElement="FIELD" fromAttribute="value" toComponent="__TITOLO" toAttribute="text" default="false">
+				<cond elemento="FIELD" attributo="row" confronto="eq" valore="1">
+					<cond elemento="FIELD" attributo="col" confronto="ge" valore="15">
+						<cond elemento="FIELD" attributo="col" confronto="lt" valore="60">
+							<cond elemento="FORMAT" attributo="isWindow" confronto="eq" valore="false"/>
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+ 			<rule name="ProgramTitle" type="transform" fromElement="FIELD" fromAttribute="value" toComponent="FieldO" toStyle="titoloProgrammaWindow" toAttribute="text" default="false">
+				<cond elemento="FIELD" attributo="row" confronto="eq" valore="1">
+					<cond elemento="FIELD" attributo="col" confronto="gt" valore="15">
+						<cond elemento="FIELD" attributo="col" confronto="lt" valore="60">
+							<cond elemento="FORMAT" attributo="isWindow" confronto="eq" valore="true"/>
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+			
+			<rule name="ErrorMessage" type="redirect" fromElement="FIELD" fromAttribute="value" toComponent="__MSGLINE" toAttribute="text" default="false">
+				<cond elemento="FIELD" attributo="name" confronto="ct" valore="ERRO">
+				</cond>
+			</rule>
+			
+			<rule name="PfkeyDesc" type="redirect" fromElement="FIELD" fromAttribute="value" toComponent="__PFKEYDESC" toAttribute="value" default="false">
+				<cond elemento="FIELD" attributo="value" confronto="ct" valore="=">
+					
+						<cond elemento="FIELD" attributo="value" confronto="bg" valore="F"/>
+						<cond elemento="FIELD" attributo="value" confronto="bg" valore="PF"/>
+						<cond elemento="FIELD" attributo="value" confronto="bg" valore="CMD"/>
+						<cond elemento="FIELD" attributo="value" confronto="bg" valore="Invio"/>
+						<cond elemento="FIELD" attributo="value" confronto="bg" valore="Roll"/>
+						<cond elemento="FIELD" attributo="value" confronto="bg" valore="Enter"/>
+					
+				</cond>
+				<!-- eventuali campi dinamici  -->
+				<cond elemento="FIELD" attributo="name" confronto="eq" valore="TITOLO"/>
+			</rule>
+			
+			<rule name="PopField" type="transform" fromElement="FIELD" fromAttribute="value" toComponent="FieldIOPop" toStyle="default" toAttribute="text" default="false" separator="=" allowEmpty="true" multipleConstants="true">
+				<cond elemento="FIELD" attributo="length" confronto="le" valore="3">
+					<cond elemento="NEXTFIELD" attributo="usage" confronto="eq" valore="K">
+						<cond elemento="FIELD" attributo="usage" confronto="eq" valore="B">
+							<cond elemento="NEXTFIELD" attributo="value" confronto="ct" valore="="/>
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+			<rule name="PopField" type="transform" fromElement="FIELD" fromAttribute="value" toComponent="FieldIOPop" toStyle="default" toAttribute="text" default="false" separator="" allowEmpty="false" multipleConstants="false">
+				<cond elemento="FIELD" attributo="length" confronto="le" valore="3">
+					<cond elemento="NEXTFIELD" attributo="usage" confronto="eq" valore="K">
+						<cond elemento="FIELD" attributo="usage" confronto="eq" valore="B">
+							<cond elemento="NEXTFIELD" attributo="value" confronto="ct" valore=","/>
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+			<rule name="transform" type="transform" fromElement="FIELD" fromAttribute="value" toComponent="FieldO" toStyle="NelSubfile" toAttribute="text" default="false">
+				<cond elemento="FORMAT" attributo="isSfl" confronto="eq" valore="true">
+					<cond elemento="FIELD" attributo="usage" confronto="eq" valore="O">
+					</cond>
+				</cond>
+			</rule>
+			<!-- formato vuoto del programma gestione ordini -->
+			<rule name="transform" type="transform" fromElement="FORMAT" fromAttribute="value" toComponent="VerticalSpacingLayout" toStyle="default" toAttribute="text" default="false">
+				<cond elemento="FORMAT" attributo="name" confronto="eq" valore="FORM2">
+					<cond elemento="DSPF" attributo="name" confronto="eq" valore="COORC3V">
+					</cond>
+				</cond>
+			</rule>
+			
+			
+			<!-- campi di tipo "I" -->
+			<rule name="transform" type="transform" fromElement="FIELD" fromAttribute="value" toComponent="FieldIO" toStyle="NelSubfile" toAttribute="text" default="false">
+				<cond elemento="FORMAT" attributo="isSfl" confronto="eq" valore="true">
+					<cond elemento="FIELD" attributo="col" confronto="gt" valore="5">
+						<cond elemento="FIELD" attributo="usage" confronto="eq" valore="B">
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+			
+			<rule name="ExtPopField" type="transform" fromElement="FIELD" fromAttribute="value" toComponent="FieldIOExtPop" toStyle="default" toAttribute="text" default="false" returnValue="" as400FKey="F11">
+				<cond elemento="FORMAT" attributo="isSfl" confronto="eq" valore="false">
+					<cond elemento="FIELD" attributo="usage" confronto="eq" valore="B">
+							<cond elemento="FIELD" attributo="name" confronto="ct" valore="ART"/>
+							<cond elemento="FIELD" attributo="name" confronto="ct" valore="CDFOR"/>
+							<cond elemento="FIELD" attributo="name" confronto="ct" valore="TPDOC"/>
+					</cond>
+				</cond>
+			</rule>
+	<!--  		<rule	name="ExtPopField" type="transform"  fromElement="FIELD" fromAttribute="value"  toComponent="FieldIOGesture" toStyle="default"  toAttribute="text"  default="false"
+					returnValue="?" as400FKey="F04"  >
+				<cond elemento="FIELD" attributo="length" confronto="le" valore="10" >
+					<cond elemento="FIELD" attributo="usage" confronto="eq" valore="B" >
+						<cond elemento="NEXTFIELD" attributo="usage" confronto="eq" valore="O" >
+							<cond elemento="FORMAT" attributo="isSfl" confronto="eq" valore="false" >
+								 <cond elemento="FIELD" attributo="name" confronto="ne" valore="WSCDFR" />
+							</cond>
+						</cond>
+						
+					</cond>
+				</cond>
+			</rule>
+	-->		
+<!-- 			<rule name="transform" type="transform"  fromElement="FIELD"  toComponent="trash" toStyle=""   default="false"  >
+				<cond elemento="DSPF" attributo="name" confronto="eq" valore="OFRALSWS" >
+					<cond elemento="FORMAT" attributo="name" confronto="eq" valore="CONTROL" >
+						<cond elemento="FIELD" attributo="name" confronto="eq" valore="K0022" />
+					</cond>
+				</cond>
+			</rule>
+-->		
+<!--	<rule name="transform" type="transform" fromElement="FIELD" toComponent="FieldO" toStyle="RigaSflBold" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="ct" valore="C">
+					<cond elemento="FORMAT" attributo="isSfl" confronto="eq" valore="true">
+						<cond elemento="FIELD" attributo="usage" confronto="eq" valore="O">
+							<cond elemento="FIELD" attributo="row" confronto="eq" valore="9"/>
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+	 		
+			<rule name="transform" type="transform" fromElement="FIELD" toComponent="FieldO" toStyle="RigaSflPiccola" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="ct" valore="C">
+					<cond elemento="FORMAT" attributo="isSfl" confronto="eq" valore="true">
+						<cond elemento="FIELD" attributo="usage" confronto="eq" valore="O">
+							<cond elemento="FIELD" attributo="row" confronto="eq" valore="10"/>
+							<cond elemento="FIELD" attributo="row" confronto="eq" valore="11"/>
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+			
+			<rule name="transform" type="transform" fromElement="FIELD" toComponent="Constant" toStyle="RigaSflPiccola" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="ct" valore="C">
+					<cond elemento="FORMAT" attributo="isSfl" confronto="eq" valore="true">
+						<cond elemento="FIELD" attributo="usage" confronto="eq" valore="K">
+							<cond elemento="FIELD" attributo="row" confronto="eq" valore="10"/>
+							<cond elemento="FIELD" attributo="row" confronto="eq" valore="11"/>
+						</cond>
+					</cond>
+				</cond>
+			</rule>
+			
+ -->			
+			<!-- campi data con input touch -->
+<!--			<rule name="transform" type="transform"  fromElement="FIELD"  toComponent="FieldIODate" toStyle="default"   default="false"  >
+				<cond elemento="FIELD" attributo="usage" confronto="eq" valore="B" >
+					<cond elemento="KEYWORD" attributo="EDTWRD" confronto="eq" valore="'  /  /  '" >
+						<cond elemento="FIELD" attributo="type" confronto="eq" valore="S" />
+						<cond elemento="FIELD" attributo="type" confronto="eq" valore="Y" />
+					</cond>
+				</cond>
+			</rule>
+-->				<!-- campi numerici con input touch -->
+<!--			<rule name="transform" type="transform"  fromElement="FIELD"  toComponent="FieldIONumeric" toStyle="default"   default="false"  >
+				<cond elemento="FIELD" attributo="usage" confronto="eq" valore="B" >
+					<cond elemento="KEYWORD" attributo="EDTWRD" confronto="ne" valore="'  /  /  '" >
+						<cond elemento="FIELD" attributo="type" confronto="eq" valore="S" />
+						<cond elemento="FIELD" attributo="type" confronto="eq" valore="Y" />
+					</cond>
+				</cond>
+			</rule>
+	-->		
+			<rule name="transform" type="transform" fromElement="FIELD" toComponent="trash" toStyle="" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="eq" valore="OFRALSWS">
+					<cond elemento="FORMAT" attributo="name" confronto="eq" valore="CONTROL">
+						<cond elemento="FIELD" attributo="name" confronto="eq&#x9;" valore="K0027"/>
+					</cond>
+				</cond>
+			</rule>
+			
+			<rule name="transform" type="transform" fromElement="FORMAT" toComponent="Window" toStyle="default" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="eq" valore="TBELLSWS">
+					<cond elemento="FORMAT" attributo="name" confronto="eq" valore="CONTROL"/>
+				</cond>
+			</rule>
+			
+			<!-- toglie i formati do fondo con i soli tasti funzione e messaggio  -->
+<!--		<rule name="transform" type="transform" fromElement="FORMAT" toComponent="GenericFormat" toStyle="FormatoInvisibile" default="false">
+				<cond elemento="DSPF" attributo="name" confronto="bg" valore="OF">
+					<cond elemento="FORMAT" attributo="name" confronto="eq" valore="BOTTOM"/>
+				</cond>
+			</rule>
+	 -->		
+			
+			
+			<rule name="aaaaaaaaaaaaa" elementName="nomedspfformatetc" destinationComponent="anmerowcoletcetc" destinationStyle="nomestile" destinationAttribue="nomeattributo" destinationValue="valore imposto">
+			</rule>
+		</rules>
+		
+	
+		<tableRules>
+			<headerRules>
+				<headerRule dspf="*" format="*" headerRows="1" rowsBeforeTable="1"/>
+			</headerRules>
+			<filterRules>
+				<filterRule dspf="*" format="*" filterRows="1" rowsBeforeTable="1"/>
+			</filterRules>
+			<optionsRules>
+				<optionsRule dspf="*" format="*" fieldName="WSCELT"/>
+			</optionsRules>
+		</tableRules>
+	</rulesSection>
+	
+	<fontsSection>
+		<fontsToLoad>
+			<font name="DejaVu Sans Mono"/>
+			<font name="Arial Mono"/>
+			<font name="Arial Black"/>
+			<font name="Arial"/>
+			<font name="Arial Narrow"/>
+			<font name="Orbitron"/>
+		</fontsToLoad>
+	</fontsSection>
+	
+</root>

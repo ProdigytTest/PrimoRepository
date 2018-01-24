@@ -1,0 +1,14 @@
+<font name="DejaVu Sans" />
+<font name="Vera Sans Mono" />
+<font name="Arial" />
+<font name="ArialNarrow" />
+<font name="Orbitron" />
+<font name="Consolas" />
+<font name="Norma Fixed" /> ---> Mono normal
+<font name="Futurist Fixed" /> ---> Mono normal
+<font name="Lotte Paperfang" /> ---> Mono normal
+<font name="DejaVu Sans Mono" /> ---> Completo
+<font name="Liberation Mono" /> ---> Completo
+<font name="Free Mono" /> ----> Completo
+
+
